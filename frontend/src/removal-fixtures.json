@@ -1,0 +1,670 @@
+[
+  {
+    "conversation_id": "qa",
+    "revision": 1,
+    "prompt_version": "v3",
+    "provider_mode": "mock",
+    "accepted": true,
+    "assistant_message": "Je veux une grande salade avec poulet, tomate et maïs.",
+    "model_text_trusted": false,
+    "actions": [
+      {
+        "type": "SET_CATEGORY",
+        "category": "salad"
+      },
+      {
+        "type": "SET_SIZE",
+        "size": "large"
+      },
+      {
+        "type": "ADD_ITEM",
+        "item_id": "salad.ingredient.grilled_chicken"
+      },
+      {
+        "type": "ADD_ITEM",
+        "item_id": "salad.ingredient.tomato"
+      },
+      {
+        "type": "ADD_ITEM",
+        "item_id": "salad.ingredient.corn"
+      }
+    ],
+    "meal_state": {
+      "active_category": "salad",
+      "categories": {
+        "salad": {
+          "type": "salad",
+          "size": "large",
+          "slots": {
+            "base": [],
+            "ingredient": [
+              "salad.ingredient.grilled_chicken",
+              "salad.ingredient.tomato",
+              "salad.ingredient.corn"
+            ],
+            "topping": [],
+            "sauce": []
+          }
+        }
+      }
+    },
+    "quote": {
+      "currency": "MAD",
+      "lines": [
+        {
+          "category": "salad",
+          "meal": {
+            "type": "salad",
+            "size": "large",
+            "slots": {
+              "base": [],
+              "ingredient": [
+                "salad.ingredient.grilled_chicken",
+                "salad.ingredient.tomato",
+                "salad.ingredient.corn"
+              ],
+              "topping": [],
+              "sauce": []
+            }
+          },
+          "amount": 55,
+          "complete": false
+        }
+      ],
+      "total": 55,
+      "orderable": false,
+      "missing": [
+        {
+          "category": "salad",
+          "slot": "base",
+          "count": 2
+        },
+        {
+          "category": "salad",
+          "slot": "ingredient",
+          "count": 2
+        },
+        {
+          "category": "salad",
+          "slot": "topping",
+          "count": 3
+        },
+        {
+          "category": "salad",
+          "slot": "sauce",
+          "count": 2
+        }
+      ]
+    },
+    "display": {
+      "message": "Composition mise à jour. Estimation : 55 MAD.",
+      "facts": {
+        "quote": {
+          "currency": "MAD",
+          "lines": [
+            {
+              "category": "salad",
+              "meal": {
+                "type": "salad",
+                "size": "large",
+                "slots": {
+                  "base": [],
+                  "ingredient": [
+                    "salad.ingredient.grilled_chicken",
+                    "salad.ingredient.tomato",
+                    "salad.ingredient.corn"
+                  ],
+                  "topping": [],
+                  "sauce": []
+                }
+              },
+              "amount": 55,
+              "complete": false
+            }
+          ],
+          "total": 55,
+          "orderable": false,
+          "missing": [
+            {
+              "category": "salad",
+              "slot": "base",
+              "count": 2
+            },
+            {
+              "category": "salad",
+              "slot": "ingredient",
+              "count": 2
+            },
+            {
+              "category": "salad",
+              "slot": "topping",
+              "count": 3
+            },
+            {
+              "category": "salad",
+              "slot": "sauce",
+              "count": 2
+            }
+          ]
+        },
+        "selected_items": [
+          {
+            "id": "salad.ingredient.grilled_chicken",
+            "category": "salad",
+            "slot": "ingredient",
+            "name": {
+              "fr": "Poulet grillé",
+              "en": "Grilled chicken"
+            },
+            "price": 0,
+            "tags": [
+              "protein",
+              "filling",
+              "savory"
+            ],
+            "allergens": [],
+            "spice": 0,
+            "vegetarian": false,
+            "vegan": false,
+            "asset": "salad/chicken_strips",
+            "group": null
+          },
+          {
+            "id": "salad.ingredient.tomato",
+            "category": "salad",
+            "slot": "ingredient",
+            "name": {
+              "fr": "Tomate",
+              "en": "Tomato"
+            },
+            "price": 0,
+            "tags": [
+              "fresh",
+              "light"
+            ],
+            "allergens": [],
+            "spice": 0,
+            "vegetarian": true,
+            "vegan": true,
+            "asset": "salad/tomato_wedges",
+            "group": null
+          },
+          {
+            "id": "salad.ingredient.corn",
+            "category": "salad",
+            "slot": "ingredient",
+            "name": {
+              "fr": "Maïs",
+              "en": "Corn"
+            },
+            "price": 0,
+            "tags": [
+              "sweet",
+              "light"
+            ],
+            "allergens": [],
+            "spice": 0,
+            "vegetarian": true,
+            "vegan": true,
+            "asset": "salad/corn_kernels",
+            "group": null
+          }
+        ],
+        "recommended_items": [],
+        "allergen_scope": [
+          "dairy",
+          "nuts",
+          "gluten",
+          "eggs",
+          "sesame"
+        ],
+        "allergen_note": "Seuls ces 5 allergènes sont suivis. Les traces et contaminations croisées ne sont pas modélisées.",
+        "nutrition_available": false,
+        "availability_tracked": false
+      }
+    },
+    "limits": {
+      "fictional_menu": true,
+      "nutrition_available": false,
+      "availability_tracked": false,
+      "allergen_scope": [
+        "dairy",
+        "nuts",
+        "gluten",
+        "eggs",
+        "sesame"
+      ],
+      "allergen_note": "Seuls ces 5 allergènes sont suivis. Les traces et contaminations croisées ne sont pas modélisées.",
+      "external_order_submitted": false,
+      "payments_supported": false
+    },
+    "error": null
+  },
+  {
+    "conversation_id": "qa",
+    "revision": 2,
+    "prompt_version": "v3",
+    "provider_mode": "mock",
+    "accepted": true,
+    "assistant_message": "Enlève la tomate.",
+    "model_text_trusted": false,
+    "actions": [
+      {
+        "type": "REMOVE_ITEM",
+        "item_id": "salad.ingredient.tomato"
+      }
+    ],
+    "meal_state": {
+      "active_category": "salad",
+      "categories": {
+        "salad": {
+          "type": "salad",
+          "size": "large",
+          "slots": {
+            "base": [],
+            "ingredient": [
+              "salad.ingredient.grilled_chicken",
+              "salad.ingredient.corn"
+            ],
+            "topping": [],
+            "sauce": []
+          }
+        }
+      }
+    },
+    "quote": {
+      "currency": "MAD",
+      "lines": [
+        {
+          "category": "salad",
+          "meal": {
+            "type": "salad",
+            "size": "large",
+            "slots": {
+              "base": [],
+              "ingredient": [
+                "salad.ingredient.grilled_chicken",
+                "salad.ingredient.corn"
+              ],
+              "topping": [],
+              "sauce": []
+            }
+          },
+          "amount": 55,
+          "complete": false
+        }
+      ],
+      "total": 55,
+      "orderable": false,
+      "missing": [
+        {
+          "category": "salad",
+          "slot": "base",
+          "count": 2
+        },
+        {
+          "category": "salad",
+          "slot": "ingredient",
+          "count": 3
+        },
+        {
+          "category": "salad",
+          "slot": "topping",
+          "count": 3
+        },
+        {
+          "category": "salad",
+          "slot": "sauce",
+          "count": 2
+        }
+      ]
+    },
+    "display": {
+      "message": "Composition mise à jour. Estimation : 55 MAD.",
+      "facts": {
+        "quote": {
+          "currency": "MAD",
+          "lines": [
+            {
+              "category": "salad",
+              "meal": {
+                "type": "salad",
+                "size": "large",
+                "slots": {
+                  "base": [],
+                  "ingredient": [
+                    "salad.ingredient.grilled_chicken",
+                    "salad.ingredient.corn"
+                  ],
+                  "topping": [],
+                  "sauce": []
+                }
+              },
+              "amount": 55,
+              "complete": false
+            }
+          ],
+          "total": 55,
+          "orderable": false,
+          "missing": [
+            {
+              "category": "salad",
+              "slot": "base",
+              "count": 2
+            },
+            {
+              "category": "salad",
+              "slot": "ingredient",
+              "count": 3
+            },
+            {
+              "category": "salad",
+              "slot": "topping",
+              "count": 3
+            },
+            {
+              "category": "salad",
+              "slot": "sauce",
+              "count": 2
+            }
+          ]
+        },
+        "selected_items": [
+          {
+            "id": "salad.ingredient.grilled_chicken",
+            "category": "salad",
+            "slot": "ingredient",
+            "name": {
+              "fr": "Poulet grillé",
+              "en": "Grilled chicken"
+            },
+            "price": 0,
+            "tags": [
+              "protein",
+              "filling",
+              "savory"
+            ],
+            "allergens": [],
+            "spice": 0,
+            "vegetarian": false,
+            "vegan": false,
+            "asset": "salad/chicken_strips",
+            "group": null
+          },
+          {
+            "id": "salad.ingredient.corn",
+            "category": "salad",
+            "slot": "ingredient",
+            "name": {
+              "fr": "Maïs",
+              "en": "Corn"
+            },
+            "price": 0,
+            "tags": [
+              "sweet",
+              "light"
+            ],
+            "allergens": [],
+            "spice": 0,
+            "vegetarian": true,
+            "vegan": true,
+            "asset": "salad/corn_kernels",
+            "group": null
+          }
+        ],
+        "recommended_items": [],
+        "allergen_scope": [
+          "dairy",
+          "nuts",
+          "gluten",
+          "eggs",
+          "sesame"
+        ],
+        "allergen_note": "Seuls ces 5 allergènes sont suivis. Les traces et contaminations croisées ne sont pas modélisées.",
+        "nutrition_available": false,
+        "availability_tracked": false
+      }
+    },
+    "limits": {
+      "fictional_menu": true,
+      "nutrition_available": false,
+      "availability_tracked": false,
+      "allergen_scope": [
+        "dairy",
+        "nuts",
+        "gluten",
+        "eggs",
+        "sesame"
+      ],
+      "allergen_note": "Seuls ces 5 allergènes sont suivis. Les traces et contaminations croisées ne sont pas modélisées.",
+      "external_order_submitted": false,
+      "payments_supported": false
+    },
+    "error": null
+  },
+  {
+    "conversation_id": "qa",
+    "revision": 3,
+    "prompt_version": "v3",
+    "provider_mode": "mock",
+    "accepted": true,
+    "assistant_message": "Ajoute la tomate.",
+    "model_text_trusted": false,
+    "actions": [
+      {
+        "type": "ADD_ITEM",
+        "item_id": "salad.ingredient.tomato"
+      }
+    ],
+    "meal_state": {
+      "active_category": "salad",
+      "categories": {
+        "salad": {
+          "type": "salad",
+          "size": "large",
+          "slots": {
+            "base": [],
+            "ingredient": [
+              "salad.ingredient.grilled_chicken",
+              "salad.ingredient.corn",
+              "salad.ingredient.tomato"
+            ],
+            "topping": [],
+            "sauce": []
+          }
+        }
+      }
+    },
+    "quote": {
+      "currency": "MAD",
+      "lines": [
+        {
+          "category": "salad",
+          "meal": {
+            "type": "salad",
+            "size": "large",
+            "slots": {
+              "base": [],
+              "ingredient": [
+                "salad.ingredient.grilled_chicken",
+                "salad.ingredient.corn",
+                "salad.ingredient.tomato"
+              ],
+              "topping": [],
+              "sauce": []
+            }
+          },
+          "amount": 55,
+          "complete": false
+        }
+      ],
+      "total": 55,
+      "orderable": false,
+      "missing": [
+        {
+          "category": "salad",
+          "slot": "base",
+          "count": 2
+        },
+        {
+          "category": "salad",
+          "slot": "ingredient",
+          "count": 2
+        },
+        {
+          "category": "salad",
+          "slot": "topping",
+          "count": 3
+        },
+        {
+          "category": "salad",
+          "slot": "sauce",
+          "count": 2
+        }
+      ]
+    },
+    "display": {
+      "message": "Composition mise à jour. Estimation : 55 MAD.",
+      "facts": {
+        "quote": {
+          "currency": "MAD",
+          "lines": [
+            {
+              "category": "salad",
+              "meal": {
+                "type": "salad",
+                "size": "large",
+                "slots": {
+                  "base": [],
+                  "ingredient": [
+                    "salad.ingredient.grilled_chicken",
+                    "salad.ingredient.corn",
+                    "salad.ingredient.tomato"
+                  ],
+                  "topping": [],
+                  "sauce": []
+                }
+              },
+              "amount": 55,
+              "complete": false
+            }
+          ],
+          "total": 55,
+          "orderable": false,
+          "missing": [
+            {
+              "category": "salad",
+              "slot": "base",
+              "count": 2
+            },
+            {
+              "category": "salad",
+              "slot": "ingredient",
+              "count": 2
+            },
+            {
+              "category": "salad",
+              "slot": "topping",
+              "count": 3
+            },
+            {
+              "category": "salad",
+              "slot": "sauce",
+              "count": 2
+            }
+          ]
+        },
+        "selected_items": [
+          {
+            "id": "salad.ingredient.grilled_chicken",
+            "category": "salad",
+            "slot": "ingredient",
+            "name": {
+              "fr": "Poulet grillé",
+              "en": "Grilled chicken"
+            },
+            "price": 0,
+            "tags": [
+              "protein",
+              "filling",
+              "savory"
+            ],
+            "allergens": [],
+            "spice": 0,
+            "vegetarian": false,
+            "vegan": false,
+            "asset": "salad/chicken_strips",
+            "group": null
+          },
+          {
+            "id": "salad.ingredient.corn",
+            "category": "salad",
+            "slot": "ingredient",
+            "name": {
+              "fr": "Maïs",
+              "en": "Corn"
+            },
+            "price": 0,
+            "tags": [
+              "sweet",
+              "light"
+            ],
+            "allergens": [],
+            "spice": 0,
+            "vegetarian": true,
+            "vegan": true,
+            "asset": "salad/corn_kernels",
+            "group": null
+          },
+          {
+            "id": "salad.ingredient.tomato",
+            "category": "salad",
+            "slot": "ingredient",
+            "name": {
+              "fr": "Tomate",
+              "en": "Tomato"
+            },
+            "price": 0,
+            "tags": [
+              "fresh",
+              "light"
+            ],
+            "allergens": [],
+            "spice": 0,
+            "vegetarian": true,
+            "vegan": true,
+            "asset": "salad/tomato_wedges",
+            "group": null
+          }
+        ],
+        "recommended_items": [],
+        "allergen_scope": [
+          "dairy",
+          "nuts",
+          "gluten",
+          "eggs",
+          "sesame"
+        ],
+        "allergen_note": "Seuls ces 5 allergènes sont suivis. Les traces et contaminations croisées ne sont pas modélisées.",
+        "nutrition_available": false,
+        "availability_tracked": false
+      }
+    },
+    "limits": {
+      "fictional_menu": true,
+      "nutrition_available": false,
+      "availability_tracked": false,
+      "allergen_scope": [
+        "dairy",
+        "nuts",
+        "gluten",
+        "eggs",
+        "sesame"
+      ],
+      "allergen_note": "Seuls ces 5 allergènes sont suivis. Les traces et contaminations croisées ne sont pas modélisées.",
+      "external_order_submitted": false,
+      "payments_supported": false
+    },
+    "error": null
+  }
+]

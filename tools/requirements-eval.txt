@@ -1,0 +1,2 @@
+# Local payload budget checks; production core remains standard-library-only.
+tiktoken==0.12.0

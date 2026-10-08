@@ -1,0 +1,7 @@
+# Stage 2 runtime; versions exercised on Python 3.9.
+fastapi==0.128.8
+pydantic==2.13.5
+uvicorn==0.39.0
+python-dotenv==1.2.1
+# TestClient for offline API integration tests.
+httpx==0.28.1

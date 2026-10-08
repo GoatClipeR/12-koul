@@ -1,0 +1,3416 @@
+[
+  {
+    "conversation_id": "fixture",
+    "revision": 1,
+    "prompt_version": "v3",
+    "provider_mode": "mock",
+    "accepted": true,
+    "assistant_message": "Proposition de test pour cette catégorie.",
+    "cart": {
+      "lines": [],
+      "total": 0,
+      "currency": "MAD",
+      "confirmed": false,
+      "external_order_submitted": false
+    },
+    "model_text_trusted": false,
+    "actions": [
+      {
+        "type": "SET_CATEGORY",
+        "category": "salad"
+      },
+      {
+        "type": "SET_SIZE",
+        "size": "small"
+      },
+      {
+        "type": "ADD_ITEM",
+        "item_id": "salad.base.lettuce"
+      },
+      {
+        "type": "ADD_ITEM",
+        "item_id": "salad.ingredient.tomato"
+      },
+      {
+        "type": "ADD_ITEM",
+        "item_id": "salad.ingredient.corn"
+      },
+      {
+        "type": "ADD_ITEM",
+        "item_id": "salad.topping.croutons"
+      },
+      {
+        "type": "ADD_ITEM",
+        "item_id": "salad.sauce.caesar"
+      }
+    ],
+    "meal_state": {
+      "active_category": "salad",
+      "categories": {
+        "salad": {
+          "type": "salad",
+          "size": "small",
+          "slots": {
+            "base": [
+              "salad.base.lettuce"
+            ],
+            "ingredient": [
+              "salad.ingredient.tomato",
+              "salad.ingredient.corn"
+            ],
+            "topping": [
+              "salad.topping.croutons"
+            ],
+            "sauce": [
+              "salad.sauce.caesar"
+            ]
+          }
+        }
+      }
+    },
+    "quote": {
+      "currency": "MAD",
+      "lines": [
+        {
+          "category": "salad",
+          "meal": {
+            "type": "salad",
+            "size": "small",
+            "slots": {
+              "base": [
+                "salad.base.lettuce"
+              ],
+              "ingredient": [
+                "salad.ingredient.tomato",
+                "salad.ingredient.corn"
+              ],
+              "topping": [
+                "salad.topping.croutons"
+              ],
+              "sauce": [
+                "salad.sauce.caesar"
+              ]
+            }
+          },
+          "amount": 35,
+          "complete": true
+        }
+      ],
+      "total": 35,
+      "orderable": true,
+      "missing": []
+    },
+    "display": {
+      "message": "Composition mise à jour. Estimation : 35 MAD.",
+      "facts": {
+        "quote": {
+          "currency": "MAD",
+          "lines": [
+            {
+              "category": "salad",
+              "meal": {
+                "type": "salad",
+                "size": "small",
+                "slots": {
+                  "base": [
+                    "salad.base.lettuce"
+                  ],
+                  "ingredient": [
+                    "salad.ingredient.tomato",
+                    "salad.ingredient.corn"
+                  ],
+                  "topping": [
+                    "salad.topping.croutons"
+                  ],
+                  "sauce": [
+                    "salad.sauce.caesar"
+                  ]
+                }
+              },
+              "amount": 35,
+              "complete": true
+            }
+          ],
+          "total": 35,
+          "orderable": true,
+          "missing": []
+        },
+        "selected_items": [
+          {
+            "id": "salad.base.lettuce",
+            "category": "salad",
+            "slot": "base",
+            "name": {
+              "fr": "Laitue",
+              "en": "Lettuce"
+            },
+            "price": 0,
+            "tags": [
+              "fresh",
+              "light",
+              "crunchy"
+            ],
+            "allergens": [],
+            "spice": 0,
+            "vegetarian": true,
+            "vegan": true,
+            "asset": "salad/lettuce_leaves",
+            "group": null
+          },
+          {
+            "id": "salad.ingredient.tomato",
+            "category": "salad",
+            "slot": "ingredient",
+            "name": {
+              "fr": "Tomate",
+              "en": "Tomato"
+            },
+            "price": 0,
+            "tags": [
+              "fresh",
+              "light"
+            ],
+            "allergens": [],
+            "spice": 0,
+            "vegetarian": true,
+            "vegan": true,
+            "asset": "salad/tomato_wedges",
+            "group": null
+          },
+          {
+            "id": "salad.ingredient.corn",
+            "category": "salad",
+            "slot": "ingredient",
+            "name": {
+              "fr": "Maïs",
+              "en": "Corn"
+            },
+            "price": 0,
+            "tags": [
+              "sweet",
+              "light"
+            ],
+            "allergens": [],
+            "spice": 0,
+            "vegetarian": true,
+            "vegan": true,
+            "asset": "salad/corn_kernels",
+            "group": null
+          },
+          {
+            "id": "salad.topping.croutons",
+            "category": "salad",
+            "slot": "topping",
+            "name": {
+              "fr": "Croûtons",
+              "en": "Croutons"
+            },
+            "price": 0,
+            "tags": [
+              "crunchy",
+              "savory"
+            ],
+            "allergens": [
+              "gluten"
+            ],
+            "spice": 0,
+            "vegetarian": true,
+            "vegan": true,
+            "asset": "salad/croutons",
+            "group": null
+          },
+          {
+            "id": "salad.sauce.caesar",
+            "category": "salad",
+            "slot": "sauce",
+            "name": {
+              "fr": "César",
+              "en": "Caesar"
+            },
+            "price": 0,
+            "tags": [
+              "creamy",
+              "indulgent"
+            ],
+            "allergens": [
+              "dairy",
+              "eggs"
+            ],
+            "spice": 0,
+            "vegetarian": true,
+            "vegan": false,
+            "asset": "salad/sauce_caesar",
+            "group": null
+          }
+        ],
+        "recommended_items": [],
+        "allergen_scope": [
+          "dairy",
+          "nuts",
+          "gluten",
+          "eggs",
+          "sesame"
+        ],
+        "allergen_note": "Seuls ces 5 allergènes sont suivis. Les traces et contaminations croisées ne sont pas modélisées.",
+        "nutrition_available": false,
+        "availability_tracked": false
+      }
+    },
+    "limits": {
+      "fictional_menu": true,
+      "nutrition_available": false,
+      "availability_tracked": false,
+      "allergen_scope": [
+        "dairy",
+        "nuts",
+        "gluten",
+        "eggs",
+        "sesame"
+      ],
+      "allergen_note": "Seuls ces 5 allergènes sont suivis. Les traces et contaminations croisées ne sont pas modélisées.",
+      "external_order_submitted": false,
+      "payments_supported": false
+    },
+    "error": null
+  },
+  {
+    "conversation_id": "fixture",
+    "revision": 2,
+    "prompt_version": "v3",
+    "provider_mode": "mock",
+    "accepted": true,
+    "assistant_message": "Composition ajoutée au panier.",
+    "cart": {
+      "lines": [
+        {
+          "id": "327e14c6e42d417d90782d8bda7260c5",
+          "meal_state": {
+            "active_category": "salad",
+            "categories": {
+              "salad": {
+                "type": "salad",
+                "size": "small",
+                "slots": {
+                  "base": [
+                    "salad.base.lettuce"
+                  ],
+                  "ingredient": [
+                    "salad.ingredient.tomato",
+                    "salad.ingredient.corn"
+                  ],
+                  "topping": [
+                    "salad.topping.croutons"
+                  ],
+                  "sauce": [
+                    "salad.sauce.caesar"
+                  ]
+                }
+              }
+            }
+          },
+          "quote": {
+            "currency": "MAD",
+            "lines": [
+              {
+                "category": "salad",
+                "meal": {
+                  "type": "salad",
+                  "size": "small",
+                  "slots": {
+                    "base": [
+                      "salad.base.lettuce"
+                    ],
+                    "ingredient": [
+                      "salad.ingredient.tomato",
+                      "salad.ingredient.corn"
+                    ],
+                    "topping": [
+                      "salad.topping.croutons"
+                    ],
+                    "sauce": [
+                      "salad.sauce.caesar"
+                    ]
+                  }
+                },
+                "amount": 35,
+                "complete": true
+              }
+            ],
+            "total": 35,
+            "orderable": true,
+            "missing": []
+          },
+          "items": [
+            {
+              "id": "salad.base.lettuce",
+              "category": "salad",
+              "slot": "base",
+              "name": {
+                "fr": "Laitue",
+                "en": "Lettuce"
+              },
+              "price": 0,
+              "tags": [
+                "fresh",
+                "light",
+                "crunchy"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": "salad/lettuce_leaves",
+              "group": null
+            },
+            {
+              "id": "salad.ingredient.tomato",
+              "category": "salad",
+              "slot": "ingredient",
+              "name": {
+                "fr": "Tomate",
+                "en": "Tomato"
+              },
+              "price": 0,
+              "tags": [
+                "fresh",
+                "light"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": "salad/tomato_wedges",
+              "group": null
+            },
+            {
+              "id": "salad.ingredient.corn",
+              "category": "salad",
+              "slot": "ingredient",
+              "name": {
+                "fr": "Maïs",
+                "en": "Corn"
+              },
+              "price": 0,
+              "tags": [
+                "sweet",
+                "light"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": "salad/corn_kernels",
+              "group": null
+            },
+            {
+              "id": "salad.topping.croutons",
+              "category": "salad",
+              "slot": "topping",
+              "name": {
+                "fr": "Croûtons",
+                "en": "Croutons"
+              },
+              "price": 0,
+              "tags": [
+                "crunchy",
+                "savory"
+              ],
+              "allergens": [
+                "gluten"
+              ],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": "salad/croutons",
+              "group": null
+            },
+            {
+              "id": "salad.sauce.caesar",
+              "category": "salad",
+              "slot": "sauce",
+              "name": {
+                "fr": "César",
+                "en": "Caesar"
+              },
+              "price": 0,
+              "tags": [
+                "creamy",
+                "indulgent"
+              ],
+              "allergens": [
+                "dairy",
+                "eggs"
+              ],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": false,
+              "asset": "salad/sauce_caesar",
+              "group": null
+            }
+          ]
+        }
+      ],
+      "total": 35,
+      "currency": "MAD",
+      "confirmed": false,
+      "external_order_submitted": false
+    },
+    "model_text_trusted": false,
+    "actions": [],
+    "meal_state": {
+      "active_category": null,
+      "categories": {}
+    },
+    "quote": {
+      "currency": "MAD",
+      "lines": [],
+      "total": 0,
+      "orderable": false,
+      "missing": []
+    },
+    "display": {
+      "message": "Choisissez une catégorie ou consultez les informations du menu.",
+      "facts": {
+        "quote": {
+          "currency": "MAD",
+          "lines": [],
+          "total": 0,
+          "orderable": false,
+          "missing": []
+        },
+        "selected_items": [],
+        "recommended_items": [],
+        "allergen_scope": [
+          "dairy",
+          "nuts",
+          "gluten",
+          "eggs",
+          "sesame"
+        ],
+        "allergen_note": "Seuls ces 5 allergènes sont suivis. Les traces et contaminations croisées ne sont pas modélisées.",
+        "nutrition_available": false,
+        "availability_tracked": false
+      }
+    },
+    "limits": {
+      "fictional_menu": true,
+      "nutrition_available": false,
+      "availability_tracked": false,
+      "allergen_scope": [
+        "dairy",
+        "nuts",
+        "gluten",
+        "eggs",
+        "sesame"
+      ],
+      "allergen_note": "Seuls ces 5 allergènes sont suivis. Les traces et contaminations croisées ne sont pas modélisées.",
+      "external_order_submitted": false,
+      "payments_supported": false
+    },
+    "error": null
+  },
+  {
+    "conversation_id": "fixture",
+    "revision": 3,
+    "prompt_version": "v3",
+    "provider_mode": "mock",
+    "accepted": true,
+    "assistant_message": "Proposition de test pour cette catégorie.",
+    "cart": {
+      "lines": [
+        {
+          "id": "327e14c6e42d417d90782d8bda7260c5",
+          "meal_state": {
+            "active_category": "salad",
+            "categories": {
+              "salad": {
+                "type": "salad",
+                "size": "small",
+                "slots": {
+                  "base": [
+                    "salad.base.lettuce"
+                  ],
+                  "ingredient": [
+                    "salad.ingredient.tomato",
+                    "salad.ingredient.corn"
+                  ],
+                  "topping": [
+                    "salad.topping.croutons"
+                  ],
+                  "sauce": [
+                    "salad.sauce.caesar"
+                  ]
+                }
+              }
+            }
+          },
+          "quote": {
+            "currency": "MAD",
+            "lines": [
+              {
+                "category": "salad",
+                "meal": {
+                  "type": "salad",
+                  "size": "small",
+                  "slots": {
+                    "base": [
+                      "salad.base.lettuce"
+                    ],
+                    "ingredient": [
+                      "salad.ingredient.tomato",
+                      "salad.ingredient.corn"
+                    ],
+                    "topping": [
+                      "salad.topping.croutons"
+                    ],
+                    "sauce": [
+                      "salad.sauce.caesar"
+                    ]
+                  }
+                },
+                "amount": 35,
+                "complete": true
+              }
+            ],
+            "total": 35,
+            "orderable": true,
+            "missing": []
+          },
+          "items": [
+            {
+              "id": "salad.base.lettuce",
+              "category": "salad",
+              "slot": "base",
+              "name": {
+                "fr": "Laitue",
+                "en": "Lettuce"
+              },
+              "price": 0,
+              "tags": [
+                "fresh",
+                "light",
+                "crunchy"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": "salad/lettuce_leaves",
+              "group": null
+            },
+            {
+              "id": "salad.ingredient.tomato",
+              "category": "salad",
+              "slot": "ingredient",
+              "name": {
+                "fr": "Tomate",
+                "en": "Tomato"
+              },
+              "price": 0,
+              "tags": [
+                "fresh",
+                "light"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": "salad/tomato_wedges",
+              "group": null
+            },
+            {
+              "id": "salad.ingredient.corn",
+              "category": "salad",
+              "slot": "ingredient",
+              "name": {
+                "fr": "Maïs",
+                "en": "Corn"
+              },
+              "price": 0,
+              "tags": [
+                "sweet",
+                "light"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": "salad/corn_kernels",
+              "group": null
+            },
+            {
+              "id": "salad.topping.croutons",
+              "category": "salad",
+              "slot": "topping",
+              "name": {
+                "fr": "Croûtons",
+                "en": "Croutons"
+              },
+              "price": 0,
+              "tags": [
+                "crunchy",
+                "savory"
+              ],
+              "allergens": [
+                "gluten"
+              ],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": "salad/croutons",
+              "group": null
+            },
+            {
+              "id": "salad.sauce.caesar",
+              "category": "salad",
+              "slot": "sauce",
+              "name": {
+                "fr": "César",
+                "en": "Caesar"
+              },
+              "price": 0,
+              "tags": [
+                "creamy",
+                "indulgent"
+              ],
+              "allergens": [
+                "dairy",
+                "eggs"
+              ],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": false,
+              "asset": "salad/sauce_caesar",
+              "group": null
+            }
+          ]
+        }
+      ],
+      "total": 35,
+      "currency": "MAD",
+      "confirmed": false,
+      "external_order_submitted": false
+    },
+    "model_text_trusted": false,
+    "actions": [
+      {
+        "type": "SET_CATEGORY",
+        "category": "sandwich"
+      },
+      {
+        "type": "ADD_ITEM",
+        "item_id": "sandwich.bread.baguette"
+      },
+      {
+        "type": "ADD_ITEM",
+        "item_id": "sandwich.protein.grilled_chicken"
+      },
+      {
+        "type": "ADD_ITEM",
+        "item_id": "sandwich.sauce.algerian"
+      }
+    ],
+    "meal_state": {
+      "active_category": "sandwich",
+      "categories": {
+        "sandwich": {
+          "type": "sandwich",
+          "size": null,
+          "slots": {
+            "bread": [
+              "sandwich.bread.baguette"
+            ],
+            "protein": [
+              "sandwich.protein.grilled_chicken"
+            ],
+            "cheese": [],
+            "vegetable": [],
+            "sauce": [
+              "sandwich.sauce.algerian"
+            ],
+            "extra": []
+          }
+        }
+      }
+    },
+    "quote": {
+      "currency": "MAD",
+      "lines": [
+        {
+          "category": "sandwich",
+          "meal": {
+            "type": "sandwich",
+            "size": null,
+            "slots": {
+              "bread": [
+                "sandwich.bread.baguette"
+              ],
+              "protein": [
+                "sandwich.protein.grilled_chicken"
+              ],
+              "cheese": [],
+              "vegetable": [],
+              "sauce": [
+                "sandwich.sauce.algerian"
+              ],
+              "extra": []
+            }
+          },
+          "amount": 38,
+          "complete": true
+        }
+      ],
+      "total": 38,
+      "orderable": true,
+      "missing": []
+    },
+    "display": {
+      "message": "Composition mise à jour. Estimation : 38 MAD.",
+      "facts": {
+        "quote": {
+          "currency": "MAD",
+          "lines": [
+            {
+              "category": "sandwich",
+              "meal": {
+                "type": "sandwich",
+                "size": null,
+                "slots": {
+                  "bread": [
+                    "sandwich.bread.baguette"
+                  ],
+                  "protein": [
+                    "sandwich.protein.grilled_chicken"
+                  ],
+                  "cheese": [],
+                  "vegetable": [],
+                  "sauce": [
+                    "sandwich.sauce.algerian"
+                  ],
+                  "extra": []
+                }
+              },
+              "amount": 38,
+              "complete": true
+            }
+          ],
+          "total": 38,
+          "orderable": true,
+          "missing": []
+        },
+        "selected_items": [
+          {
+            "id": "sandwich.bread.baguette",
+            "category": "sandwich",
+            "slot": "bread",
+            "name": {
+              "fr": "Baguette",
+              "en": "Baguette"
+            },
+            "price": 0,
+            "tags": [
+              "crunchy"
+            ],
+            "allergens": [
+              "gluten"
+            ],
+            "spice": 0,
+            "vegetarian": true,
+            "vegan": true,
+            "asset": null,
+            "group": null
+          },
+          {
+            "id": "sandwich.protein.grilled_chicken",
+            "category": "sandwich",
+            "slot": "protein",
+            "name": {
+              "fr": "Poulet grillé",
+              "en": "Grilled chicken"
+            },
+            "price": 38,
+            "tags": [
+              "protein",
+              "savory"
+            ],
+            "allergens": [],
+            "spice": 0,
+            "vegetarian": false,
+            "vegan": false,
+            "asset": null,
+            "group": null
+          },
+          {
+            "id": "sandwich.sauce.algerian",
+            "category": "sandwich",
+            "slot": "sauce",
+            "name": {
+              "fr": "Algérienne",
+              "en": "Algerian"
+            },
+            "price": 0,
+            "tags": [
+              "spicy",
+              "creamy"
+            ],
+            "allergens": [
+              "eggs"
+            ],
+            "spice": 2,
+            "vegetarian": true,
+            "vegan": false,
+            "asset": null,
+            "group": null
+          }
+        ],
+        "recommended_items": [],
+        "allergen_scope": [
+          "dairy",
+          "nuts",
+          "gluten",
+          "eggs",
+          "sesame"
+        ],
+        "allergen_note": "Seuls ces 5 allergènes sont suivis. Les traces et contaminations croisées ne sont pas modélisées.",
+        "nutrition_available": false,
+        "availability_tracked": false
+      }
+    },
+    "limits": {
+      "fictional_menu": true,
+      "nutrition_available": false,
+      "availability_tracked": false,
+      "allergen_scope": [
+        "dairy",
+        "nuts",
+        "gluten",
+        "eggs",
+        "sesame"
+      ],
+      "allergen_note": "Seuls ces 5 allergènes sont suivis. Les traces et contaminations croisées ne sont pas modélisées.",
+      "external_order_submitted": false,
+      "payments_supported": false
+    },
+    "error": null
+  },
+  {
+    "conversation_id": "fixture",
+    "revision": 4,
+    "prompt_version": "v3",
+    "provider_mode": "mock",
+    "accepted": true,
+    "assistant_message": "Composition ajoutée au panier.",
+    "cart": {
+      "lines": [
+        {
+          "id": "327e14c6e42d417d90782d8bda7260c5",
+          "meal_state": {
+            "active_category": "salad",
+            "categories": {
+              "salad": {
+                "type": "salad",
+                "size": "small",
+                "slots": {
+                  "base": [
+                    "salad.base.lettuce"
+                  ],
+                  "ingredient": [
+                    "salad.ingredient.tomato",
+                    "salad.ingredient.corn"
+                  ],
+                  "topping": [
+                    "salad.topping.croutons"
+                  ],
+                  "sauce": [
+                    "salad.sauce.caesar"
+                  ]
+                }
+              }
+            }
+          },
+          "quote": {
+            "currency": "MAD",
+            "lines": [
+              {
+                "category": "salad",
+                "meal": {
+                  "type": "salad",
+                  "size": "small",
+                  "slots": {
+                    "base": [
+                      "salad.base.lettuce"
+                    ],
+                    "ingredient": [
+                      "salad.ingredient.tomato",
+                      "salad.ingredient.corn"
+                    ],
+                    "topping": [
+                      "salad.topping.croutons"
+                    ],
+                    "sauce": [
+                      "salad.sauce.caesar"
+                    ]
+                  }
+                },
+                "amount": 35,
+                "complete": true
+              }
+            ],
+            "total": 35,
+            "orderable": true,
+            "missing": []
+          },
+          "items": [
+            {
+              "id": "salad.base.lettuce",
+              "category": "salad",
+              "slot": "base",
+              "name": {
+                "fr": "Laitue",
+                "en": "Lettuce"
+              },
+              "price": 0,
+              "tags": [
+                "fresh",
+                "light",
+                "crunchy"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": "salad/lettuce_leaves",
+              "group": null
+            },
+            {
+              "id": "salad.ingredient.tomato",
+              "category": "salad",
+              "slot": "ingredient",
+              "name": {
+                "fr": "Tomate",
+                "en": "Tomato"
+              },
+              "price": 0,
+              "tags": [
+                "fresh",
+                "light"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": "salad/tomato_wedges",
+              "group": null
+            },
+            {
+              "id": "salad.ingredient.corn",
+              "category": "salad",
+              "slot": "ingredient",
+              "name": {
+                "fr": "Maïs",
+                "en": "Corn"
+              },
+              "price": 0,
+              "tags": [
+                "sweet",
+                "light"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": "salad/corn_kernels",
+              "group": null
+            },
+            {
+              "id": "salad.topping.croutons",
+              "category": "salad",
+              "slot": "topping",
+              "name": {
+                "fr": "Croûtons",
+                "en": "Croutons"
+              },
+              "price": 0,
+              "tags": [
+                "crunchy",
+                "savory"
+              ],
+              "allergens": [
+                "gluten"
+              ],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": "salad/croutons",
+              "group": null
+            },
+            {
+              "id": "salad.sauce.caesar",
+              "category": "salad",
+              "slot": "sauce",
+              "name": {
+                "fr": "César",
+                "en": "Caesar"
+              },
+              "price": 0,
+              "tags": [
+                "creamy",
+                "indulgent"
+              ],
+              "allergens": [
+                "dairy",
+                "eggs"
+              ],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": false,
+              "asset": "salad/sauce_caesar",
+              "group": null
+            }
+          ]
+        },
+        {
+          "id": "c5f221b6bba842fd9e7fb08de719cec4",
+          "meal_state": {
+            "active_category": "sandwich",
+            "categories": {
+              "sandwich": {
+                "type": "sandwich",
+                "size": null,
+                "slots": {
+                  "bread": [
+                    "sandwich.bread.baguette"
+                  ],
+                  "protein": [
+                    "sandwich.protein.grilled_chicken"
+                  ],
+                  "cheese": [],
+                  "vegetable": [],
+                  "sauce": [
+                    "sandwich.sauce.algerian"
+                  ],
+                  "extra": []
+                }
+              }
+            }
+          },
+          "quote": {
+            "currency": "MAD",
+            "lines": [
+              {
+                "category": "sandwich",
+                "meal": {
+                  "type": "sandwich",
+                  "size": null,
+                  "slots": {
+                    "bread": [
+                      "sandwich.bread.baguette"
+                    ],
+                    "protein": [
+                      "sandwich.protein.grilled_chicken"
+                    ],
+                    "cheese": [],
+                    "vegetable": [],
+                    "sauce": [
+                      "sandwich.sauce.algerian"
+                    ],
+                    "extra": []
+                  }
+                },
+                "amount": 38,
+                "complete": true
+              }
+            ],
+            "total": 38,
+            "orderable": true,
+            "missing": []
+          },
+          "items": [
+            {
+              "id": "sandwich.bread.baguette",
+              "category": "sandwich",
+              "slot": "bread",
+              "name": {
+                "fr": "Baguette",
+                "en": "Baguette"
+              },
+              "price": 0,
+              "tags": [
+                "crunchy"
+              ],
+              "allergens": [
+                "gluten"
+              ],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": null,
+              "group": null
+            },
+            {
+              "id": "sandwich.protein.grilled_chicken",
+              "category": "sandwich",
+              "slot": "protein",
+              "name": {
+                "fr": "Poulet grillé",
+                "en": "Grilled chicken"
+              },
+              "price": 38,
+              "tags": [
+                "protein",
+                "savory"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": false,
+              "vegan": false,
+              "asset": null,
+              "group": null
+            },
+            {
+              "id": "sandwich.sauce.algerian",
+              "category": "sandwich",
+              "slot": "sauce",
+              "name": {
+                "fr": "Algérienne",
+                "en": "Algerian"
+              },
+              "price": 0,
+              "tags": [
+                "spicy",
+                "creamy"
+              ],
+              "allergens": [
+                "eggs"
+              ],
+              "spice": 2,
+              "vegetarian": true,
+              "vegan": false,
+              "asset": null,
+              "group": null
+            }
+          ]
+        }
+      ],
+      "total": 73,
+      "currency": "MAD",
+      "confirmed": false,
+      "external_order_submitted": false
+    },
+    "model_text_trusted": false,
+    "actions": [],
+    "meal_state": {
+      "active_category": null,
+      "categories": {}
+    },
+    "quote": {
+      "currency": "MAD",
+      "lines": [],
+      "total": 0,
+      "orderable": false,
+      "missing": []
+    },
+    "display": {
+      "message": "Choisissez une catégorie ou consultez les informations du menu.",
+      "facts": {
+        "quote": {
+          "currency": "MAD",
+          "lines": [],
+          "total": 0,
+          "orderable": false,
+          "missing": []
+        },
+        "selected_items": [],
+        "recommended_items": [],
+        "allergen_scope": [
+          "dairy",
+          "nuts",
+          "gluten",
+          "eggs",
+          "sesame"
+        ],
+        "allergen_note": "Seuls ces 5 allergènes sont suivis. Les traces et contaminations croisées ne sont pas modélisées.",
+        "nutrition_available": false,
+        "availability_tracked": false
+      }
+    },
+    "limits": {
+      "fictional_menu": true,
+      "nutrition_available": false,
+      "availability_tracked": false,
+      "allergen_scope": [
+        "dairy",
+        "nuts",
+        "gluten",
+        "eggs",
+        "sesame"
+      ],
+      "allergen_note": "Seuls ces 5 allergènes sont suivis. Les traces et contaminations croisées ne sont pas modélisées.",
+      "external_order_submitted": false,
+      "payments_supported": false
+    },
+    "error": null
+  },
+  {
+    "conversation_id": "fixture",
+    "revision": 5,
+    "prompt_version": "v3",
+    "provider_mode": "mock",
+    "accepted": true,
+    "assistant_message": "Proposition de test pour cette catégorie.",
+    "cart": {
+      "lines": [
+        {
+          "id": "327e14c6e42d417d90782d8bda7260c5",
+          "meal_state": {
+            "active_category": "salad",
+            "categories": {
+              "salad": {
+                "type": "salad",
+                "size": "small",
+                "slots": {
+                  "base": [
+                    "salad.base.lettuce"
+                  ],
+                  "ingredient": [
+                    "salad.ingredient.tomato",
+                    "salad.ingredient.corn"
+                  ],
+                  "topping": [
+                    "salad.topping.croutons"
+                  ],
+                  "sauce": [
+                    "salad.sauce.caesar"
+                  ]
+                }
+              }
+            }
+          },
+          "quote": {
+            "currency": "MAD",
+            "lines": [
+              {
+                "category": "salad",
+                "meal": {
+                  "type": "salad",
+                  "size": "small",
+                  "slots": {
+                    "base": [
+                      "salad.base.lettuce"
+                    ],
+                    "ingredient": [
+                      "salad.ingredient.tomato",
+                      "salad.ingredient.corn"
+                    ],
+                    "topping": [
+                      "salad.topping.croutons"
+                    ],
+                    "sauce": [
+                      "salad.sauce.caesar"
+                    ]
+                  }
+                },
+                "amount": 35,
+                "complete": true
+              }
+            ],
+            "total": 35,
+            "orderable": true,
+            "missing": []
+          },
+          "items": [
+            {
+              "id": "salad.base.lettuce",
+              "category": "salad",
+              "slot": "base",
+              "name": {
+                "fr": "Laitue",
+                "en": "Lettuce"
+              },
+              "price": 0,
+              "tags": [
+                "fresh",
+                "light",
+                "crunchy"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": "salad/lettuce_leaves",
+              "group": null
+            },
+            {
+              "id": "salad.ingredient.tomato",
+              "category": "salad",
+              "slot": "ingredient",
+              "name": {
+                "fr": "Tomate",
+                "en": "Tomato"
+              },
+              "price": 0,
+              "tags": [
+                "fresh",
+                "light"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": "salad/tomato_wedges",
+              "group": null
+            },
+            {
+              "id": "salad.ingredient.corn",
+              "category": "salad",
+              "slot": "ingredient",
+              "name": {
+                "fr": "Maïs",
+                "en": "Corn"
+              },
+              "price": 0,
+              "tags": [
+                "sweet",
+                "light"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": "salad/corn_kernels",
+              "group": null
+            },
+            {
+              "id": "salad.topping.croutons",
+              "category": "salad",
+              "slot": "topping",
+              "name": {
+                "fr": "Croûtons",
+                "en": "Croutons"
+              },
+              "price": 0,
+              "tags": [
+                "crunchy",
+                "savory"
+              ],
+              "allergens": [
+                "gluten"
+              ],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": "salad/croutons",
+              "group": null
+            },
+            {
+              "id": "salad.sauce.caesar",
+              "category": "salad",
+              "slot": "sauce",
+              "name": {
+                "fr": "César",
+                "en": "Caesar"
+              },
+              "price": 0,
+              "tags": [
+                "creamy",
+                "indulgent"
+              ],
+              "allergens": [
+                "dairy",
+                "eggs"
+              ],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": false,
+              "asset": "salad/sauce_caesar",
+              "group": null
+            }
+          ]
+        },
+        {
+          "id": "c5f221b6bba842fd9e7fb08de719cec4",
+          "meal_state": {
+            "active_category": "sandwich",
+            "categories": {
+              "sandwich": {
+                "type": "sandwich",
+                "size": null,
+                "slots": {
+                  "bread": [
+                    "sandwich.bread.baguette"
+                  ],
+                  "protein": [
+                    "sandwich.protein.grilled_chicken"
+                  ],
+                  "cheese": [],
+                  "vegetable": [],
+                  "sauce": [
+                    "sandwich.sauce.algerian"
+                  ],
+                  "extra": []
+                }
+              }
+            }
+          },
+          "quote": {
+            "currency": "MAD",
+            "lines": [
+              {
+                "category": "sandwich",
+                "meal": {
+                  "type": "sandwich",
+                  "size": null,
+                  "slots": {
+                    "bread": [
+                      "sandwich.bread.baguette"
+                    ],
+                    "protein": [
+                      "sandwich.protein.grilled_chicken"
+                    ],
+                    "cheese": [],
+                    "vegetable": [],
+                    "sauce": [
+                      "sandwich.sauce.algerian"
+                    ],
+                    "extra": []
+                  }
+                },
+                "amount": 38,
+                "complete": true
+              }
+            ],
+            "total": 38,
+            "orderable": true,
+            "missing": []
+          },
+          "items": [
+            {
+              "id": "sandwich.bread.baguette",
+              "category": "sandwich",
+              "slot": "bread",
+              "name": {
+                "fr": "Baguette",
+                "en": "Baguette"
+              },
+              "price": 0,
+              "tags": [
+                "crunchy"
+              ],
+              "allergens": [
+                "gluten"
+              ],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": null,
+              "group": null
+            },
+            {
+              "id": "sandwich.protein.grilled_chicken",
+              "category": "sandwich",
+              "slot": "protein",
+              "name": {
+                "fr": "Poulet grillé",
+                "en": "Grilled chicken"
+              },
+              "price": 38,
+              "tags": [
+                "protein",
+                "savory"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": false,
+              "vegan": false,
+              "asset": null,
+              "group": null
+            },
+            {
+              "id": "sandwich.sauce.algerian",
+              "category": "sandwich",
+              "slot": "sauce",
+              "name": {
+                "fr": "Algérienne",
+                "en": "Algerian"
+              },
+              "price": 0,
+              "tags": [
+                "spicy",
+                "creamy"
+              ],
+              "allergens": [
+                "eggs"
+              ],
+              "spice": 2,
+              "vegetarian": true,
+              "vegan": false,
+              "asset": null,
+              "group": null
+            }
+          ]
+        }
+      ],
+      "total": 73,
+      "currency": "MAD",
+      "confirmed": false,
+      "external_order_submitted": false
+    },
+    "model_text_trusted": false,
+    "actions": [
+      {
+        "type": "SET_CATEGORY",
+        "category": "plat"
+      },
+      {
+        "type": "ADD_ITEM",
+        "item_id": "plat.protein.grilled_chicken"
+      },
+      {
+        "type": "ADD_ITEM",
+        "item_id": "plat.side.fries"
+      },
+      {
+        "type": "ADD_ITEM",
+        "item_id": "plat.sauce.barbecue"
+      }
+    ],
+    "meal_state": {
+      "active_category": "plat",
+      "categories": {
+        "plat": {
+          "type": "plat",
+          "size": null,
+          "slots": {
+            "protein": [
+              "plat.protein.grilled_chicken"
+            ],
+            "side": [
+              "plat.side.fries"
+            ],
+            "sauce": [
+              "plat.sauce.barbecue"
+            ]
+          }
+        }
+      }
+    },
+    "quote": {
+      "currency": "MAD",
+      "lines": [
+        {
+          "category": "plat",
+          "meal": {
+            "type": "plat",
+            "size": null,
+            "slots": {
+              "protein": [
+                "plat.protein.grilled_chicken"
+              ],
+              "side": [
+                "plat.side.fries"
+              ],
+              "sauce": [
+                "plat.sauce.barbecue"
+              ]
+            }
+          },
+          "amount": 55,
+          "complete": true
+        }
+      ],
+      "total": 55,
+      "orderable": true,
+      "missing": []
+    },
+    "display": {
+      "message": "Composition mise à jour. Estimation : 55 MAD.",
+      "facts": {
+        "quote": {
+          "currency": "MAD",
+          "lines": [
+            {
+              "category": "plat",
+              "meal": {
+                "type": "plat",
+                "size": null,
+                "slots": {
+                  "protein": [
+                    "plat.protein.grilled_chicken"
+                  ],
+                  "side": [
+                    "plat.side.fries"
+                  ],
+                  "sauce": [
+                    "plat.sauce.barbecue"
+                  ]
+                }
+              },
+              "amount": 55,
+              "complete": true
+            }
+          ],
+          "total": 55,
+          "orderable": true,
+          "missing": []
+        },
+        "selected_items": [
+          {
+            "id": "plat.protein.grilled_chicken",
+            "category": "plat",
+            "slot": "protein",
+            "name": {
+              "fr": "Poulet grillé",
+              "en": "Grilled chicken"
+            },
+            "price": 55,
+            "tags": [
+              "protein",
+              "filling"
+            ],
+            "allergens": [],
+            "spice": 0,
+            "vegetarian": false,
+            "vegan": false,
+            "asset": null,
+            "group": null
+          },
+          {
+            "id": "plat.side.fries",
+            "category": "plat",
+            "slot": "side",
+            "name": {
+              "fr": "Frites",
+              "en": "Fries"
+            },
+            "price": 0,
+            "tags": [
+              "crunchy",
+              "indulgent"
+            ],
+            "allergens": [],
+            "spice": 0,
+            "vegetarian": true,
+            "vegan": true,
+            "asset": null,
+            "group": null
+          },
+          {
+            "id": "plat.sauce.barbecue",
+            "category": "plat",
+            "slot": "sauce",
+            "name": {
+              "fr": "Sauce barbecue",
+              "en": "Barbecue sauce"
+            },
+            "price": 0,
+            "tags": [
+              "smoky",
+              "sweet"
+            ],
+            "allergens": [],
+            "spice": 0,
+            "vegetarian": true,
+            "vegan": true,
+            "asset": null,
+            "group": null
+          }
+        ],
+        "recommended_items": [],
+        "allergen_scope": [
+          "dairy",
+          "nuts",
+          "gluten",
+          "eggs",
+          "sesame"
+        ],
+        "allergen_note": "Seuls ces 5 allergènes sont suivis. Les traces et contaminations croisées ne sont pas modélisées.",
+        "nutrition_available": false,
+        "availability_tracked": false
+      }
+    },
+    "limits": {
+      "fictional_menu": true,
+      "nutrition_available": false,
+      "availability_tracked": false,
+      "allergen_scope": [
+        "dairy",
+        "nuts",
+        "gluten",
+        "eggs",
+        "sesame"
+      ],
+      "allergen_note": "Seuls ces 5 allergènes sont suivis. Les traces et contaminations croisées ne sont pas modélisées.",
+      "external_order_submitted": false,
+      "payments_supported": false
+    },
+    "error": null
+  },
+  {
+    "conversation_id": "fixture",
+    "revision": 6,
+    "prompt_version": "v3",
+    "provider_mode": "mock",
+    "accepted": true,
+    "assistant_message": "Composition ajoutée au panier.",
+    "cart": {
+      "lines": [
+        {
+          "id": "327e14c6e42d417d90782d8bda7260c5",
+          "meal_state": {
+            "active_category": "salad",
+            "categories": {
+              "salad": {
+                "type": "salad",
+                "size": "small",
+                "slots": {
+                  "base": [
+                    "salad.base.lettuce"
+                  ],
+                  "ingredient": [
+                    "salad.ingredient.tomato",
+                    "salad.ingredient.corn"
+                  ],
+                  "topping": [
+                    "salad.topping.croutons"
+                  ],
+                  "sauce": [
+                    "salad.sauce.caesar"
+                  ]
+                }
+              }
+            }
+          },
+          "quote": {
+            "currency": "MAD",
+            "lines": [
+              {
+                "category": "salad",
+                "meal": {
+                  "type": "salad",
+                  "size": "small",
+                  "slots": {
+                    "base": [
+                      "salad.base.lettuce"
+                    ],
+                    "ingredient": [
+                      "salad.ingredient.tomato",
+                      "salad.ingredient.corn"
+                    ],
+                    "topping": [
+                      "salad.topping.croutons"
+                    ],
+                    "sauce": [
+                      "salad.sauce.caesar"
+                    ]
+                  }
+                },
+                "amount": 35,
+                "complete": true
+              }
+            ],
+            "total": 35,
+            "orderable": true,
+            "missing": []
+          },
+          "items": [
+            {
+              "id": "salad.base.lettuce",
+              "category": "salad",
+              "slot": "base",
+              "name": {
+                "fr": "Laitue",
+                "en": "Lettuce"
+              },
+              "price": 0,
+              "tags": [
+                "fresh",
+                "light",
+                "crunchy"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": "salad/lettuce_leaves",
+              "group": null
+            },
+            {
+              "id": "salad.ingredient.tomato",
+              "category": "salad",
+              "slot": "ingredient",
+              "name": {
+                "fr": "Tomate",
+                "en": "Tomato"
+              },
+              "price": 0,
+              "tags": [
+                "fresh",
+                "light"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": "salad/tomato_wedges",
+              "group": null
+            },
+            {
+              "id": "salad.ingredient.corn",
+              "category": "salad",
+              "slot": "ingredient",
+              "name": {
+                "fr": "Maïs",
+                "en": "Corn"
+              },
+              "price": 0,
+              "tags": [
+                "sweet",
+                "light"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": "salad/corn_kernels",
+              "group": null
+            },
+            {
+              "id": "salad.topping.croutons",
+              "category": "salad",
+              "slot": "topping",
+              "name": {
+                "fr": "Croûtons",
+                "en": "Croutons"
+              },
+              "price": 0,
+              "tags": [
+                "crunchy",
+                "savory"
+              ],
+              "allergens": [
+                "gluten"
+              ],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": "salad/croutons",
+              "group": null
+            },
+            {
+              "id": "salad.sauce.caesar",
+              "category": "salad",
+              "slot": "sauce",
+              "name": {
+                "fr": "César",
+                "en": "Caesar"
+              },
+              "price": 0,
+              "tags": [
+                "creamy",
+                "indulgent"
+              ],
+              "allergens": [
+                "dairy",
+                "eggs"
+              ],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": false,
+              "asset": "salad/sauce_caesar",
+              "group": null
+            }
+          ]
+        },
+        {
+          "id": "c5f221b6bba842fd9e7fb08de719cec4",
+          "meal_state": {
+            "active_category": "sandwich",
+            "categories": {
+              "sandwich": {
+                "type": "sandwich",
+                "size": null,
+                "slots": {
+                  "bread": [
+                    "sandwich.bread.baguette"
+                  ],
+                  "protein": [
+                    "sandwich.protein.grilled_chicken"
+                  ],
+                  "cheese": [],
+                  "vegetable": [],
+                  "sauce": [
+                    "sandwich.sauce.algerian"
+                  ],
+                  "extra": []
+                }
+              }
+            }
+          },
+          "quote": {
+            "currency": "MAD",
+            "lines": [
+              {
+                "category": "sandwich",
+                "meal": {
+                  "type": "sandwich",
+                  "size": null,
+                  "slots": {
+                    "bread": [
+                      "sandwich.bread.baguette"
+                    ],
+                    "protein": [
+                      "sandwich.protein.grilled_chicken"
+                    ],
+                    "cheese": [],
+                    "vegetable": [],
+                    "sauce": [
+                      "sandwich.sauce.algerian"
+                    ],
+                    "extra": []
+                  }
+                },
+                "amount": 38,
+                "complete": true
+              }
+            ],
+            "total": 38,
+            "orderable": true,
+            "missing": []
+          },
+          "items": [
+            {
+              "id": "sandwich.bread.baguette",
+              "category": "sandwich",
+              "slot": "bread",
+              "name": {
+                "fr": "Baguette",
+                "en": "Baguette"
+              },
+              "price": 0,
+              "tags": [
+                "crunchy"
+              ],
+              "allergens": [
+                "gluten"
+              ],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": null,
+              "group": null
+            },
+            {
+              "id": "sandwich.protein.grilled_chicken",
+              "category": "sandwich",
+              "slot": "protein",
+              "name": {
+                "fr": "Poulet grillé",
+                "en": "Grilled chicken"
+              },
+              "price": 38,
+              "tags": [
+                "protein",
+                "savory"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": false,
+              "vegan": false,
+              "asset": null,
+              "group": null
+            },
+            {
+              "id": "sandwich.sauce.algerian",
+              "category": "sandwich",
+              "slot": "sauce",
+              "name": {
+                "fr": "Algérienne",
+                "en": "Algerian"
+              },
+              "price": 0,
+              "tags": [
+                "spicy",
+                "creamy"
+              ],
+              "allergens": [
+                "eggs"
+              ],
+              "spice": 2,
+              "vegetarian": true,
+              "vegan": false,
+              "asset": null,
+              "group": null
+            }
+          ]
+        },
+        {
+          "id": "aa97d9a02e6049cc8e29673cb0757496",
+          "meal_state": {
+            "active_category": "plat",
+            "categories": {
+              "plat": {
+                "type": "plat",
+                "size": null,
+                "slots": {
+                  "protein": [
+                    "plat.protein.grilled_chicken"
+                  ],
+                  "side": [
+                    "plat.side.fries"
+                  ],
+                  "sauce": [
+                    "plat.sauce.barbecue"
+                  ]
+                }
+              }
+            }
+          },
+          "quote": {
+            "currency": "MAD",
+            "lines": [
+              {
+                "category": "plat",
+                "meal": {
+                  "type": "plat",
+                  "size": null,
+                  "slots": {
+                    "protein": [
+                      "plat.protein.grilled_chicken"
+                    ],
+                    "side": [
+                      "plat.side.fries"
+                    ],
+                    "sauce": [
+                      "plat.sauce.barbecue"
+                    ]
+                  }
+                },
+                "amount": 55,
+                "complete": true
+              }
+            ],
+            "total": 55,
+            "orderable": true,
+            "missing": []
+          },
+          "items": [
+            {
+              "id": "plat.protein.grilled_chicken",
+              "category": "plat",
+              "slot": "protein",
+              "name": {
+                "fr": "Poulet grillé",
+                "en": "Grilled chicken"
+              },
+              "price": 55,
+              "tags": [
+                "protein",
+                "filling"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": false,
+              "vegan": false,
+              "asset": null,
+              "group": null
+            },
+            {
+              "id": "plat.side.fries",
+              "category": "plat",
+              "slot": "side",
+              "name": {
+                "fr": "Frites",
+                "en": "Fries"
+              },
+              "price": 0,
+              "tags": [
+                "crunchy",
+                "indulgent"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": null,
+              "group": null
+            },
+            {
+              "id": "plat.sauce.barbecue",
+              "category": "plat",
+              "slot": "sauce",
+              "name": {
+                "fr": "Sauce barbecue",
+                "en": "Barbecue sauce"
+              },
+              "price": 0,
+              "tags": [
+                "smoky",
+                "sweet"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": null,
+              "group": null
+            }
+          ]
+        }
+      ],
+      "total": 128,
+      "currency": "MAD",
+      "confirmed": false,
+      "external_order_submitted": false
+    },
+    "model_text_trusted": false,
+    "actions": [],
+    "meal_state": {
+      "active_category": null,
+      "categories": {}
+    },
+    "quote": {
+      "currency": "MAD",
+      "lines": [],
+      "total": 0,
+      "orderable": false,
+      "missing": []
+    },
+    "display": {
+      "message": "Choisissez une catégorie ou consultez les informations du menu.",
+      "facts": {
+        "quote": {
+          "currency": "MAD",
+          "lines": [],
+          "total": 0,
+          "orderable": false,
+          "missing": []
+        },
+        "selected_items": [],
+        "recommended_items": [],
+        "allergen_scope": [
+          "dairy",
+          "nuts",
+          "gluten",
+          "eggs",
+          "sesame"
+        ],
+        "allergen_note": "Seuls ces 5 allergènes sont suivis. Les traces et contaminations croisées ne sont pas modélisées.",
+        "nutrition_available": false,
+        "availability_tracked": false
+      }
+    },
+    "limits": {
+      "fictional_menu": true,
+      "nutrition_available": false,
+      "availability_tracked": false,
+      "allergen_scope": [
+        "dairy",
+        "nuts",
+        "gluten",
+        "eggs",
+        "sesame"
+      ],
+      "allergen_note": "Seuls ces 5 allergènes sont suivis. Les traces et contaminations croisées ne sont pas modélisées.",
+      "external_order_submitted": false,
+      "payments_supported": false
+    },
+    "error": null
+  },
+  {
+    "conversation_id": "fixture",
+    "revision": 7,
+    "prompt_version": "v3",
+    "provider_mode": "mock",
+    "accepted": true,
+    "assistant_message": "Proposition de test pour cette catégorie.",
+    "cart": {
+      "lines": [
+        {
+          "id": "327e14c6e42d417d90782d8bda7260c5",
+          "meal_state": {
+            "active_category": "salad",
+            "categories": {
+              "salad": {
+                "type": "salad",
+                "size": "small",
+                "slots": {
+                  "base": [
+                    "salad.base.lettuce"
+                  ],
+                  "ingredient": [
+                    "salad.ingredient.tomato",
+                    "salad.ingredient.corn"
+                  ],
+                  "topping": [
+                    "salad.topping.croutons"
+                  ],
+                  "sauce": [
+                    "salad.sauce.caesar"
+                  ]
+                }
+              }
+            }
+          },
+          "quote": {
+            "currency": "MAD",
+            "lines": [
+              {
+                "category": "salad",
+                "meal": {
+                  "type": "salad",
+                  "size": "small",
+                  "slots": {
+                    "base": [
+                      "salad.base.lettuce"
+                    ],
+                    "ingredient": [
+                      "salad.ingredient.tomato",
+                      "salad.ingredient.corn"
+                    ],
+                    "topping": [
+                      "salad.topping.croutons"
+                    ],
+                    "sauce": [
+                      "salad.sauce.caesar"
+                    ]
+                  }
+                },
+                "amount": 35,
+                "complete": true
+              }
+            ],
+            "total": 35,
+            "orderable": true,
+            "missing": []
+          },
+          "items": [
+            {
+              "id": "salad.base.lettuce",
+              "category": "salad",
+              "slot": "base",
+              "name": {
+                "fr": "Laitue",
+                "en": "Lettuce"
+              },
+              "price": 0,
+              "tags": [
+                "fresh",
+                "light",
+                "crunchy"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": "salad/lettuce_leaves",
+              "group": null
+            },
+            {
+              "id": "salad.ingredient.tomato",
+              "category": "salad",
+              "slot": "ingredient",
+              "name": {
+                "fr": "Tomate",
+                "en": "Tomato"
+              },
+              "price": 0,
+              "tags": [
+                "fresh",
+                "light"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": "salad/tomato_wedges",
+              "group": null
+            },
+            {
+              "id": "salad.ingredient.corn",
+              "category": "salad",
+              "slot": "ingredient",
+              "name": {
+                "fr": "Maïs",
+                "en": "Corn"
+              },
+              "price": 0,
+              "tags": [
+                "sweet",
+                "light"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": "salad/corn_kernels",
+              "group": null
+            },
+            {
+              "id": "salad.topping.croutons",
+              "category": "salad",
+              "slot": "topping",
+              "name": {
+                "fr": "Croûtons",
+                "en": "Croutons"
+              },
+              "price": 0,
+              "tags": [
+                "crunchy",
+                "savory"
+              ],
+              "allergens": [
+                "gluten"
+              ],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": "salad/croutons",
+              "group": null
+            },
+            {
+              "id": "salad.sauce.caesar",
+              "category": "salad",
+              "slot": "sauce",
+              "name": {
+                "fr": "César",
+                "en": "Caesar"
+              },
+              "price": 0,
+              "tags": [
+                "creamy",
+                "indulgent"
+              ],
+              "allergens": [
+                "dairy",
+                "eggs"
+              ],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": false,
+              "asset": "salad/sauce_caesar",
+              "group": null
+            }
+          ]
+        },
+        {
+          "id": "c5f221b6bba842fd9e7fb08de719cec4",
+          "meal_state": {
+            "active_category": "sandwich",
+            "categories": {
+              "sandwich": {
+                "type": "sandwich",
+                "size": null,
+                "slots": {
+                  "bread": [
+                    "sandwich.bread.baguette"
+                  ],
+                  "protein": [
+                    "sandwich.protein.grilled_chicken"
+                  ],
+                  "cheese": [],
+                  "vegetable": [],
+                  "sauce": [
+                    "sandwich.sauce.algerian"
+                  ],
+                  "extra": []
+                }
+              }
+            }
+          },
+          "quote": {
+            "currency": "MAD",
+            "lines": [
+              {
+                "category": "sandwich",
+                "meal": {
+                  "type": "sandwich",
+                  "size": null,
+                  "slots": {
+                    "bread": [
+                      "sandwich.bread.baguette"
+                    ],
+                    "protein": [
+                      "sandwich.protein.grilled_chicken"
+                    ],
+                    "cheese": [],
+                    "vegetable": [],
+                    "sauce": [
+                      "sandwich.sauce.algerian"
+                    ],
+                    "extra": []
+                  }
+                },
+                "amount": 38,
+                "complete": true
+              }
+            ],
+            "total": 38,
+            "orderable": true,
+            "missing": []
+          },
+          "items": [
+            {
+              "id": "sandwich.bread.baguette",
+              "category": "sandwich",
+              "slot": "bread",
+              "name": {
+                "fr": "Baguette",
+                "en": "Baguette"
+              },
+              "price": 0,
+              "tags": [
+                "crunchy"
+              ],
+              "allergens": [
+                "gluten"
+              ],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": null,
+              "group": null
+            },
+            {
+              "id": "sandwich.protein.grilled_chicken",
+              "category": "sandwich",
+              "slot": "protein",
+              "name": {
+                "fr": "Poulet grillé",
+                "en": "Grilled chicken"
+              },
+              "price": 38,
+              "tags": [
+                "protein",
+                "savory"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": false,
+              "vegan": false,
+              "asset": null,
+              "group": null
+            },
+            {
+              "id": "sandwich.sauce.algerian",
+              "category": "sandwich",
+              "slot": "sauce",
+              "name": {
+                "fr": "Algérienne",
+                "en": "Algerian"
+              },
+              "price": 0,
+              "tags": [
+                "spicy",
+                "creamy"
+              ],
+              "allergens": [
+                "eggs"
+              ],
+              "spice": 2,
+              "vegetarian": true,
+              "vegan": false,
+              "asset": null,
+              "group": null
+            }
+          ]
+        },
+        {
+          "id": "aa97d9a02e6049cc8e29673cb0757496",
+          "meal_state": {
+            "active_category": "plat",
+            "categories": {
+              "plat": {
+                "type": "plat",
+                "size": null,
+                "slots": {
+                  "protein": [
+                    "plat.protein.grilled_chicken"
+                  ],
+                  "side": [
+                    "plat.side.fries"
+                  ],
+                  "sauce": [
+                    "plat.sauce.barbecue"
+                  ]
+                }
+              }
+            }
+          },
+          "quote": {
+            "currency": "MAD",
+            "lines": [
+              {
+                "category": "plat",
+                "meal": {
+                  "type": "plat",
+                  "size": null,
+                  "slots": {
+                    "protein": [
+                      "plat.protein.grilled_chicken"
+                    ],
+                    "side": [
+                      "plat.side.fries"
+                    ],
+                    "sauce": [
+                      "plat.sauce.barbecue"
+                    ]
+                  }
+                },
+                "amount": 55,
+                "complete": true
+              }
+            ],
+            "total": 55,
+            "orderable": true,
+            "missing": []
+          },
+          "items": [
+            {
+              "id": "plat.protein.grilled_chicken",
+              "category": "plat",
+              "slot": "protein",
+              "name": {
+                "fr": "Poulet grillé",
+                "en": "Grilled chicken"
+              },
+              "price": 55,
+              "tags": [
+                "protein",
+                "filling"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": false,
+              "vegan": false,
+              "asset": null,
+              "group": null
+            },
+            {
+              "id": "plat.side.fries",
+              "category": "plat",
+              "slot": "side",
+              "name": {
+                "fr": "Frites",
+                "en": "Fries"
+              },
+              "price": 0,
+              "tags": [
+                "crunchy",
+                "indulgent"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": null,
+              "group": null
+            },
+            {
+              "id": "plat.sauce.barbecue",
+              "category": "plat",
+              "slot": "sauce",
+              "name": {
+                "fr": "Sauce barbecue",
+                "en": "Barbecue sauce"
+              },
+              "price": 0,
+              "tags": [
+                "smoky",
+                "sweet"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": null,
+              "group": null
+            }
+          ]
+        },
+        {
+          "id": "73974332095947788ec18b0f1ef1d1ea",
+          "meal_state": {
+            "active_category": "drink",
+            "categories": {
+              "drink": {
+                "type": "drink",
+                "size": null,
+                "slots": {
+                  "drink": [
+                    "drink.drink.coca_cola"
+                  ]
+                }
+              }
+            }
+          },
+          "quote": {
+            "currency": "MAD",
+            "lines": [
+              {
+                "category": "drink",
+                "meal": {
+                  "type": "drink",
+                  "size": null,
+                  "slots": {
+                    "drink": [
+                      "drink.drink.coca_cola"
+                    ]
+                  }
+                },
+                "amount": 10,
+                "complete": true
+              }
+            ],
+            "total": 10,
+            "orderable": true,
+            "missing": []
+          },
+          "items": [
+            {
+              "id": "drink.drink.coca_cola",
+              "category": "drink",
+              "slot": "drink",
+              "name": {
+                "fr": "Coca-Cola",
+                "en": "Coca-Cola"
+              },
+              "price": 10,
+              "tags": [
+                "sweet"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": null,
+              "group": "soda"
+            }
+          ]
+        },
+        {
+          "id": "5d25248d7ad14f4da924c5f6e604ee8f",
+          "meal_state": {
+            "active_category": "drink",
+            "categories": {
+              "drink": {
+                "type": "drink",
+                "size": null,
+                "slots": {
+                  "drink": [
+                    "drink.drink.orange"
+                  ]
+                }
+              }
+            }
+          },
+          "quote": {
+            "currency": "MAD",
+            "lines": [
+              {
+                "category": "drink",
+                "meal": {
+                  "type": "drink",
+                  "size": null,
+                  "slots": {
+                    "drink": [
+                      "drink.drink.orange"
+                    ]
+                  }
+                },
+                "amount": 15,
+                "complete": true
+              }
+            ],
+            "total": 15,
+            "orderable": true,
+            "missing": []
+          },
+          "items": [
+            {
+              "id": "drink.drink.orange",
+              "category": "drink",
+              "slot": "drink",
+              "name": {
+                "fr": "Jus d'orange",
+                "en": "Orange juice"
+              },
+              "price": 15,
+              "tags": [
+                "sweet",
+                "fresh"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": null,
+              "group": "juice"
+            }
+          ]
+        }
+      ],
+      "total": 153,
+      "currency": "MAD",
+      "confirmed": false,
+      "external_order_submitted": false
+    },
+    "model_text_trusted": false,
+    "actions": [
+      {
+        "type": "SET_CATEGORY",
+        "category": "drink"
+      },
+      {
+        "type": "ADD_ITEM",
+        "item_id": "drink.drink.coca_cola"
+      },
+      {
+        "type": "ADD_ITEM",
+        "item_id": "drink.drink.orange"
+      }
+    ],
+    "meal_state": {
+      "active_category": null,
+      "categories": {}
+    },
+    "quote": {
+      "currency": "MAD",
+      "lines": [],
+      "total": 0,
+      "orderable": false,
+      "missing": []
+    },
+    "display": {
+      "message": "Composition mise à jour.",
+      "facts": {
+        "quote": {
+          "currency": "MAD",
+          "lines": [],
+          "total": 0,
+          "orderable": false,
+          "missing": []
+        },
+        "selected_items": [],
+        "recommended_items": [],
+        "allergen_scope": [
+          "dairy",
+          "nuts",
+          "gluten",
+          "eggs",
+          "sesame"
+        ],
+        "allergen_note": "Seuls ces 5 allergènes sont suivis. Les traces et contaminations croisées ne sont pas modélisées.",
+        "nutrition_available": false,
+        "availability_tracked": false
+      }
+    },
+    "limits": {
+      "fictional_menu": true,
+      "nutrition_available": false,
+      "availability_tracked": false,
+      "allergen_scope": [
+        "dairy",
+        "nuts",
+        "gluten",
+        "eggs",
+        "sesame"
+      ],
+      "allergen_note": "Seuls ces 5 allergènes sont suivis. Les traces et contaminations croisées ne sont pas modélisées.",
+      "external_order_submitted": false,
+      "payments_supported": false
+    },
+    "error": null
+  },
+  {
+    "conversation_id": "fixture",
+    "revision": 8,
+    "prompt_version": "v3",
+    "provider_mode": "mock",
+    "accepted": true,
+    "assistant_message": "Panier validé pour la simulation. Aucune commande envoyée en cuisine.",
+    "cart": {
+      "lines": [
+        {
+          "id": "327e14c6e42d417d90782d8bda7260c5",
+          "meal_state": {
+            "active_category": "salad",
+            "categories": {
+              "salad": {
+                "type": "salad",
+                "size": "small",
+                "slots": {
+                  "base": [
+                    "salad.base.lettuce"
+                  ],
+                  "ingredient": [
+                    "salad.ingredient.tomato",
+                    "salad.ingredient.corn"
+                  ],
+                  "topping": [
+                    "salad.topping.croutons"
+                  ],
+                  "sauce": [
+                    "salad.sauce.caesar"
+                  ]
+                }
+              }
+            }
+          },
+          "quote": {
+            "currency": "MAD",
+            "lines": [
+              {
+                "category": "salad",
+                "meal": {
+                  "type": "salad",
+                  "size": "small",
+                  "slots": {
+                    "base": [
+                      "salad.base.lettuce"
+                    ],
+                    "ingredient": [
+                      "salad.ingredient.tomato",
+                      "salad.ingredient.corn"
+                    ],
+                    "topping": [
+                      "salad.topping.croutons"
+                    ],
+                    "sauce": [
+                      "salad.sauce.caesar"
+                    ]
+                  }
+                },
+                "amount": 35,
+                "complete": true
+              }
+            ],
+            "total": 35,
+            "orderable": true,
+            "missing": []
+          },
+          "items": [
+            {
+              "id": "salad.base.lettuce",
+              "category": "salad",
+              "slot": "base",
+              "name": {
+                "fr": "Laitue",
+                "en": "Lettuce"
+              },
+              "price": 0,
+              "tags": [
+                "fresh",
+                "light",
+                "crunchy"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": "salad/lettuce_leaves",
+              "group": null
+            },
+            {
+              "id": "salad.ingredient.tomato",
+              "category": "salad",
+              "slot": "ingredient",
+              "name": {
+                "fr": "Tomate",
+                "en": "Tomato"
+              },
+              "price": 0,
+              "tags": [
+                "fresh",
+                "light"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": "salad/tomato_wedges",
+              "group": null
+            },
+            {
+              "id": "salad.ingredient.corn",
+              "category": "salad",
+              "slot": "ingredient",
+              "name": {
+                "fr": "Maïs",
+                "en": "Corn"
+              },
+              "price": 0,
+              "tags": [
+                "sweet",
+                "light"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": "salad/corn_kernels",
+              "group": null
+            },
+            {
+              "id": "salad.topping.croutons",
+              "category": "salad",
+              "slot": "topping",
+              "name": {
+                "fr": "Croûtons",
+                "en": "Croutons"
+              },
+              "price": 0,
+              "tags": [
+                "crunchy",
+                "savory"
+              ],
+              "allergens": [
+                "gluten"
+              ],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": "salad/croutons",
+              "group": null
+            },
+            {
+              "id": "salad.sauce.caesar",
+              "category": "salad",
+              "slot": "sauce",
+              "name": {
+                "fr": "César",
+                "en": "Caesar"
+              },
+              "price": 0,
+              "tags": [
+                "creamy",
+                "indulgent"
+              ],
+              "allergens": [
+                "dairy",
+                "eggs"
+              ],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": false,
+              "asset": "salad/sauce_caesar",
+              "group": null
+            }
+          ]
+        },
+        {
+          "id": "c5f221b6bba842fd9e7fb08de719cec4",
+          "meal_state": {
+            "active_category": "sandwich",
+            "categories": {
+              "sandwich": {
+                "type": "sandwich",
+                "size": null,
+                "slots": {
+                  "bread": [
+                    "sandwich.bread.baguette"
+                  ],
+                  "protein": [
+                    "sandwich.protein.grilled_chicken"
+                  ],
+                  "cheese": [],
+                  "vegetable": [],
+                  "sauce": [
+                    "sandwich.sauce.algerian"
+                  ],
+                  "extra": []
+                }
+              }
+            }
+          },
+          "quote": {
+            "currency": "MAD",
+            "lines": [
+              {
+                "category": "sandwich",
+                "meal": {
+                  "type": "sandwich",
+                  "size": null,
+                  "slots": {
+                    "bread": [
+                      "sandwich.bread.baguette"
+                    ],
+                    "protein": [
+                      "sandwich.protein.grilled_chicken"
+                    ],
+                    "cheese": [],
+                    "vegetable": [],
+                    "sauce": [
+                      "sandwich.sauce.algerian"
+                    ],
+                    "extra": []
+                  }
+                },
+                "amount": 38,
+                "complete": true
+              }
+            ],
+            "total": 38,
+            "orderable": true,
+            "missing": []
+          },
+          "items": [
+            {
+              "id": "sandwich.bread.baguette",
+              "category": "sandwich",
+              "slot": "bread",
+              "name": {
+                "fr": "Baguette",
+                "en": "Baguette"
+              },
+              "price": 0,
+              "tags": [
+                "crunchy"
+              ],
+              "allergens": [
+                "gluten"
+              ],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": null,
+              "group": null
+            },
+            {
+              "id": "sandwich.protein.grilled_chicken",
+              "category": "sandwich",
+              "slot": "protein",
+              "name": {
+                "fr": "Poulet grillé",
+                "en": "Grilled chicken"
+              },
+              "price": 38,
+              "tags": [
+                "protein",
+                "savory"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": false,
+              "vegan": false,
+              "asset": null,
+              "group": null
+            },
+            {
+              "id": "sandwich.sauce.algerian",
+              "category": "sandwich",
+              "slot": "sauce",
+              "name": {
+                "fr": "Algérienne",
+                "en": "Algerian"
+              },
+              "price": 0,
+              "tags": [
+                "spicy",
+                "creamy"
+              ],
+              "allergens": [
+                "eggs"
+              ],
+              "spice": 2,
+              "vegetarian": true,
+              "vegan": false,
+              "asset": null,
+              "group": null
+            }
+          ]
+        },
+        {
+          "id": "aa97d9a02e6049cc8e29673cb0757496",
+          "meal_state": {
+            "active_category": "plat",
+            "categories": {
+              "plat": {
+                "type": "plat",
+                "size": null,
+                "slots": {
+                  "protein": [
+                    "plat.protein.grilled_chicken"
+                  ],
+                  "side": [
+                    "plat.side.fries"
+                  ],
+                  "sauce": [
+                    "plat.sauce.barbecue"
+                  ]
+                }
+              }
+            }
+          },
+          "quote": {
+            "currency": "MAD",
+            "lines": [
+              {
+                "category": "plat",
+                "meal": {
+                  "type": "plat",
+                  "size": null,
+                  "slots": {
+                    "protein": [
+                      "plat.protein.grilled_chicken"
+                    ],
+                    "side": [
+                      "plat.side.fries"
+                    ],
+                    "sauce": [
+                      "plat.sauce.barbecue"
+                    ]
+                  }
+                },
+                "amount": 55,
+                "complete": true
+              }
+            ],
+            "total": 55,
+            "orderable": true,
+            "missing": []
+          },
+          "items": [
+            {
+              "id": "plat.protein.grilled_chicken",
+              "category": "plat",
+              "slot": "protein",
+              "name": {
+                "fr": "Poulet grillé",
+                "en": "Grilled chicken"
+              },
+              "price": 55,
+              "tags": [
+                "protein",
+                "filling"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": false,
+              "vegan": false,
+              "asset": null,
+              "group": null
+            },
+            {
+              "id": "plat.side.fries",
+              "category": "plat",
+              "slot": "side",
+              "name": {
+                "fr": "Frites",
+                "en": "Fries"
+              },
+              "price": 0,
+              "tags": [
+                "crunchy",
+                "indulgent"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": null,
+              "group": null
+            },
+            {
+              "id": "plat.sauce.barbecue",
+              "category": "plat",
+              "slot": "sauce",
+              "name": {
+                "fr": "Sauce barbecue",
+                "en": "Barbecue sauce"
+              },
+              "price": 0,
+              "tags": [
+                "smoky",
+                "sweet"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": null,
+              "group": null
+            }
+          ]
+        },
+        {
+          "id": "73974332095947788ec18b0f1ef1d1ea",
+          "meal_state": {
+            "active_category": "drink",
+            "categories": {
+              "drink": {
+                "type": "drink",
+                "size": null,
+                "slots": {
+                  "drink": [
+                    "drink.drink.coca_cola"
+                  ]
+                }
+              }
+            }
+          },
+          "quote": {
+            "currency": "MAD",
+            "lines": [
+              {
+                "category": "drink",
+                "meal": {
+                  "type": "drink",
+                  "size": null,
+                  "slots": {
+                    "drink": [
+                      "drink.drink.coca_cola"
+                    ]
+                  }
+                },
+                "amount": 10,
+                "complete": true
+              }
+            ],
+            "total": 10,
+            "orderable": true,
+            "missing": []
+          },
+          "items": [
+            {
+              "id": "drink.drink.coca_cola",
+              "category": "drink",
+              "slot": "drink",
+              "name": {
+                "fr": "Coca-Cola",
+                "en": "Coca-Cola"
+              },
+              "price": 10,
+              "tags": [
+                "sweet"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": null,
+              "group": "soda"
+            }
+          ]
+        },
+        {
+          "id": "5d25248d7ad14f4da924c5f6e604ee8f",
+          "meal_state": {
+            "active_category": "drink",
+            "categories": {
+              "drink": {
+                "type": "drink",
+                "size": null,
+                "slots": {
+                  "drink": [
+                    "drink.drink.orange"
+                  ]
+                }
+              }
+            }
+          },
+          "quote": {
+            "currency": "MAD",
+            "lines": [
+              {
+                "category": "drink",
+                "meal": {
+                  "type": "drink",
+                  "size": null,
+                  "slots": {
+                    "drink": [
+                      "drink.drink.orange"
+                    ]
+                  }
+                },
+                "amount": 15,
+                "complete": true
+              }
+            ],
+            "total": 15,
+            "orderable": true,
+            "missing": []
+          },
+          "items": [
+            {
+              "id": "drink.drink.orange",
+              "category": "drink",
+              "slot": "drink",
+              "name": {
+                "fr": "Jus d'orange",
+                "en": "Orange juice"
+              },
+              "price": 15,
+              "tags": [
+                "sweet",
+                "fresh"
+              ],
+              "allergens": [],
+              "spice": 0,
+              "vegetarian": true,
+              "vegan": true,
+              "asset": null,
+              "group": "juice"
+            }
+          ]
+        }
+      ],
+      "total": 153,
+      "currency": "MAD",
+      "confirmed": true,
+      "external_order_submitted": false
+    },
+    "model_text_trusted": false,
+    "actions": [],
+    "meal_state": {
+      "active_category": null,
+      "categories": {}
+    },
+    "quote": {
+      "currency": "MAD",
+      "lines": [],
+      "total": 0,
+      "orderable": false,
+      "missing": []
+    },
+    "display": {
+      "message": "Choisissez une catégorie ou consultez les informations du menu.",
+      "facts": {
+        "quote": {
+          "currency": "MAD",
+          "lines": [],
+          "total": 0,
+          "orderable": false,
+          "missing": []
+        },
+        "selected_items": [],
+        "recommended_items": [],
+        "allergen_scope": [
+          "dairy",
+          "nuts",
+          "gluten",
+          "eggs",
+          "sesame"
+        ],
+        "allergen_note": "Seuls ces 5 allergènes sont suivis. Les traces et contaminations croisées ne sont pas modélisées.",
+        "nutrition_available": false,
+        "availability_tracked": false
+      }
+    },
+    "limits": {
+      "fictional_menu": true,
+      "nutrition_available": false,
+      "availability_tracked": false,
+      "allergen_scope": [
+        "dairy",
+        "nuts",
+        "gluten",
+        "eggs",
+        "sesame"
+      ],
+      "allergen_note": "Seuls ces 5 allergènes sont suivis. Les traces et contaminations croisées ne sont pas modélisées.",
+      "external_order_submitted": false,
+      "payments_supported": false
+    },
+    "error": null
+  }
+]

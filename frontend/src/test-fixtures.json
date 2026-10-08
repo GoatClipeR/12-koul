@@ -1,0 +1,727 @@
+{
+  "empty": {
+    "conversation_id": "fixture",
+    "revision": 1,
+    "prompt_version": "v3",
+    "provider_mode": "mock",
+    "accepted": true,
+    "assistant_message": "Choisissons une salade.",
+    "model_text_trusted": false,
+    "actions": [],
+    "meal_state": {
+      "active_category": null,
+      "categories": {}
+    },
+    "quote": {
+      "currency": "MAD",
+      "lines": [],
+      "total": 0,
+      "orderable": false,
+      "missing": []
+    },
+    "display": {
+      "message": "Choisissez une catégorie ou consultez les informations du menu.",
+      "facts": {
+        "quote": {
+          "currency": "MAD",
+          "lines": [],
+          "total": 0,
+          "orderable": false,
+          "missing": []
+        },
+        "selected_items": [],
+        "recommended_items": [],
+        "allergen_scope": [
+          "dairy",
+          "nuts",
+          "gluten",
+          "eggs",
+          "sesame"
+        ],
+        "allergen_note": "Seuls ces 5 allergènes sont suivis. Les traces et contaminations croisées ne sont pas modélisées.",
+        "nutrition_available": false,
+        "availability_tracked": false
+      }
+    },
+    "limits": {
+      "fictional_menu": true,
+      "nutrition_available": false,
+      "availability_tracked": false,
+      "allergen_scope": [
+        "dairy",
+        "nuts",
+        "gluten",
+        "eggs",
+        "sesame"
+      ],
+      "allergen_note": "Seuls ces 5 allergènes sont suivis. Les traces et contaminations croisées ne sont pas modélisées.",
+      "external_order_submitted": false,
+      "payments_supported": false
+    },
+    "error": null
+  },
+  "partial": {
+    "conversation_id": "fixture",
+    "revision": 2,
+    "prompt_version": "v3",
+    "provider_mode": "mock",
+    "accepted": true,
+    "assistant_message": "Je propose la laitue et la tomate.",
+    "model_text_trusted": false,
+    "actions": [
+      {
+        "type": "SET_CATEGORY",
+        "category": "salad"
+      },
+      {
+        "type": "SET_SIZE",
+        "size": "large"
+      },
+      {
+        "type": "ADD_ITEM",
+        "item_id": "salad.base.lettuce"
+      },
+      {
+        "type": "ADD_ITEM",
+        "item_id": "salad.ingredient.tomato"
+      }
+    ],
+    "meal_state": {
+      "active_category": "salad",
+      "categories": {
+        "salad": {
+          "type": "salad",
+          "size": "large",
+          "slots": {
+            "base": [
+              "salad.base.lettuce"
+            ],
+            "ingredient": [
+              "salad.ingredient.tomato"
+            ],
+            "topping": [],
+            "sauce": []
+          }
+        }
+      }
+    },
+    "quote": {
+      "currency": "MAD",
+      "lines": [
+        {
+          "category": "salad",
+          "meal": {
+            "type": "salad",
+            "size": "large",
+            "slots": {
+              "base": [
+                "salad.base.lettuce"
+              ],
+              "ingredient": [
+                "salad.ingredient.tomato"
+              ],
+              "topping": [],
+              "sauce": []
+            }
+          },
+          "amount": 55,
+          "complete": false
+        }
+      ],
+      "total": 55,
+      "orderable": false,
+      "missing": [
+        {
+          "category": "salad",
+          "slot": "base",
+          "count": 1
+        },
+        {
+          "category": "salad",
+          "slot": "ingredient",
+          "count": 4
+        },
+        {
+          "category": "salad",
+          "slot": "topping",
+          "count": 3
+        },
+        {
+          "category": "salad",
+          "slot": "sauce",
+          "count": 2
+        }
+      ]
+    },
+    "display": {
+      "message": "Composition mise à jour. Estimation : 55 MAD.",
+      "facts": {
+        "quote": {
+          "currency": "MAD",
+          "lines": [
+            {
+              "category": "salad",
+              "meal": {
+                "type": "salad",
+                "size": "large",
+                "slots": {
+                  "base": [
+                    "salad.base.lettuce"
+                  ],
+                  "ingredient": [
+                    "salad.ingredient.tomato"
+                  ],
+                  "topping": [],
+                  "sauce": []
+                }
+              },
+              "amount": 55,
+              "complete": false
+            }
+          ],
+          "total": 55,
+          "orderable": false,
+          "missing": [
+            {
+              "category": "salad",
+              "slot": "base",
+              "count": 1
+            },
+            {
+              "category": "salad",
+              "slot": "ingredient",
+              "count": 4
+            },
+            {
+              "category": "salad",
+              "slot": "topping",
+              "count": 3
+            },
+            {
+              "category": "salad",
+              "slot": "sauce",
+              "count": 2
+            }
+          ]
+        },
+        "selected_items": [
+          {
+            "id": "salad.base.lettuce",
+            "category": "salad",
+            "slot": "base",
+            "name": {
+              "fr": "Laitue",
+              "en": "Lettuce"
+            },
+            "price": 0,
+            "tags": [
+              "fresh",
+              "light",
+              "crunchy"
+            ],
+            "allergens": [],
+            "spice": 0,
+            "vegetarian": true,
+            "vegan": true,
+            "asset": "salad/lettuce_leaves",
+            "group": null
+          },
+          {
+            "id": "salad.ingredient.tomato",
+            "category": "salad",
+            "slot": "ingredient",
+            "name": {
+              "fr": "Tomate",
+              "en": "Tomato"
+            },
+            "price": 0,
+            "tags": [
+              "fresh",
+              "light"
+            ],
+            "allergens": [],
+            "spice": 0,
+            "vegetarian": true,
+            "vegan": true,
+            "asset": "salad/tomato_wedges",
+            "group": null
+          }
+        ],
+        "recommended_items": [],
+        "allergen_scope": [
+          "dairy",
+          "nuts",
+          "gluten",
+          "eggs",
+          "sesame"
+        ],
+        "allergen_note": "Seuls ces 5 allergènes sont suivis. Les traces et contaminations croisées ne sont pas modélisées.",
+        "nutrition_available": false,
+        "availability_tracked": false
+      }
+    },
+    "limits": {
+      "fictional_menu": true,
+      "nutrition_available": false,
+      "availability_tracked": false,
+      "allergen_scope": [
+        "dairy",
+        "nuts",
+        "gluten",
+        "eggs",
+        "sesame"
+      ],
+      "allergen_note": "Seuls ces 5 allergènes sont suivis. Les traces et contaminations croisées ne sont pas modélisées.",
+      "external_order_submitted": false,
+      "payments_supported": false
+    },
+    "error": null
+  },
+  "complete": {
+    "conversation_id": "fixture",
+    "revision": 3,
+    "prompt_version": "v3",
+    "provider_mode": "mock",
+    "accepted": true,
+    "assistant_message": "Voici la proposition complète.",
+    "model_text_trusted": false,
+    "actions": [
+      {
+        "type": "ADD_ITEM",
+        "item_id": "salad.base.arugula"
+      },
+      {
+        "type": "ADD_ITEM",
+        "item_id": "salad.ingredient.cucumber"
+      },
+      {
+        "type": "ADD_ITEM",
+        "item_id": "salad.ingredient.corn"
+      },
+      {
+        "type": "ADD_ITEM",
+        "item_id": "salad.ingredient.carrot"
+      },
+      {
+        "type": "ADD_ITEM",
+        "item_id": "salad.ingredient.olives"
+      },
+      {
+        "type": "ADD_ITEM",
+        "item_id": "salad.topping.croutons"
+      },
+      {
+        "type": "ADD_ITEM",
+        "item_id": "salad.topping.grilled_corn"
+      },
+      {
+        "type": "ADD_ITEM",
+        "item_id": "salad.topping.walnuts"
+      },
+      {
+        "type": "ADD_ITEM",
+        "item_id": "salad.sauce.caesar"
+      },
+      {
+        "type": "ADD_ITEM",
+        "item_id": "salad.sauce.algerian"
+      }
+    ],
+    "meal_state": {
+      "active_category": "salad",
+      "categories": {
+        "salad": {
+          "type": "salad",
+          "size": "large",
+          "slots": {
+            "base": [
+              "salad.base.lettuce",
+              "salad.base.arugula"
+            ],
+            "ingredient": [
+              "salad.ingredient.tomato",
+              "salad.ingredient.cucumber",
+              "salad.ingredient.corn",
+              "salad.ingredient.carrot",
+              "salad.ingredient.olives"
+            ],
+            "topping": [
+              "salad.topping.croutons",
+              "salad.topping.grilled_corn",
+              "salad.topping.walnuts"
+            ],
+            "sauce": [
+              "salad.sauce.caesar",
+              "salad.sauce.algerian"
+            ]
+          }
+        }
+      }
+    },
+    "quote": {
+      "currency": "MAD",
+      "lines": [
+        {
+          "category": "salad",
+          "meal": {
+            "type": "salad",
+            "size": "large",
+            "slots": {
+              "base": [
+                "salad.base.lettuce",
+                "salad.base.arugula"
+              ],
+              "ingredient": [
+                "salad.ingredient.tomato",
+                "salad.ingredient.cucumber",
+                "salad.ingredient.corn",
+                "salad.ingredient.carrot",
+                "salad.ingredient.olives"
+              ],
+              "topping": [
+                "salad.topping.croutons",
+                "salad.topping.grilled_corn",
+                "salad.topping.walnuts"
+              ],
+              "sauce": [
+                "salad.sauce.caesar",
+                "salad.sauce.algerian"
+              ]
+            }
+          },
+          "amount": 55,
+          "complete": true
+        }
+      ],
+      "total": 55,
+      "orderable": true,
+      "missing": []
+    },
+    "display": {
+      "message": "Composition mise à jour. Estimation : 55 MAD.",
+      "facts": {
+        "quote": {
+          "currency": "MAD",
+          "lines": [
+            {
+              "category": "salad",
+              "meal": {
+                "type": "salad",
+                "size": "large",
+                "slots": {
+                  "base": [
+                    "salad.base.lettuce",
+                    "salad.base.arugula"
+                  ],
+                  "ingredient": [
+                    "salad.ingredient.tomato",
+                    "salad.ingredient.cucumber",
+                    "salad.ingredient.corn",
+                    "salad.ingredient.carrot",
+                    "salad.ingredient.olives"
+                  ],
+                  "topping": [
+                    "salad.topping.croutons",
+                    "salad.topping.grilled_corn",
+                    "salad.topping.walnuts"
+                  ],
+                  "sauce": [
+                    "salad.sauce.caesar",
+                    "salad.sauce.algerian"
+                  ]
+                }
+              },
+              "amount": 55,
+              "complete": true
+            }
+          ],
+          "total": 55,
+          "orderable": true,
+          "missing": []
+        },
+        "selected_items": [
+          {
+            "id": "salad.base.lettuce",
+            "category": "salad",
+            "slot": "base",
+            "name": {
+              "fr": "Laitue",
+              "en": "Lettuce"
+            },
+            "price": 0,
+            "tags": [
+              "fresh",
+              "light",
+              "crunchy"
+            ],
+            "allergens": [],
+            "spice": 0,
+            "vegetarian": true,
+            "vegan": true,
+            "asset": "salad/lettuce_leaves",
+            "group": null
+          },
+          {
+            "id": "salad.base.arugula",
+            "category": "salad",
+            "slot": "base",
+            "name": {
+              "fr": "Roquette",
+              "en": "Arugula"
+            },
+            "price": 0,
+            "tags": [
+              "fresh",
+              "light",
+              "peppery"
+            ],
+            "allergens": [],
+            "spice": 0,
+            "vegetarian": true,
+            "vegan": true,
+            "asset": null,
+            "group": null
+          },
+          {
+            "id": "salad.ingredient.tomato",
+            "category": "salad",
+            "slot": "ingredient",
+            "name": {
+              "fr": "Tomate",
+              "en": "Tomato"
+            },
+            "price": 0,
+            "tags": [
+              "fresh",
+              "light"
+            ],
+            "allergens": [],
+            "spice": 0,
+            "vegetarian": true,
+            "vegan": true,
+            "asset": "salad/tomato_wedges",
+            "group": null
+          },
+          {
+            "id": "salad.ingredient.cucumber",
+            "category": "salad",
+            "slot": "ingredient",
+            "name": {
+              "fr": "Concombre",
+              "en": "Cucumber"
+            },
+            "price": 0,
+            "tags": [
+              "fresh",
+              "light",
+              "crunchy"
+            ],
+            "allergens": [],
+            "spice": 0,
+            "vegetarian": true,
+            "vegan": true,
+            "asset": "salad/cucumber_slices",
+            "group": null
+          },
+          {
+            "id": "salad.ingredient.corn",
+            "category": "salad",
+            "slot": "ingredient",
+            "name": {
+              "fr": "Maïs",
+              "en": "Corn"
+            },
+            "price": 0,
+            "tags": [
+              "sweet",
+              "light"
+            ],
+            "allergens": [],
+            "spice": 0,
+            "vegetarian": true,
+            "vegan": true,
+            "asset": "salad/corn_kernels",
+            "group": null
+          },
+          {
+            "id": "salad.ingredient.carrot",
+            "category": "salad",
+            "slot": "ingredient",
+            "name": {
+              "fr": "Carotte",
+              "en": "Carrot"
+            },
+            "price": 0,
+            "tags": [
+              "crunchy",
+              "sweet",
+              "light"
+            ],
+            "allergens": [],
+            "spice": 0,
+            "vegetarian": true,
+            "vegan": true,
+            "asset": null,
+            "group": null
+          },
+          {
+            "id": "salad.ingredient.olives",
+            "category": "salad",
+            "slot": "ingredient",
+            "name": {
+              "fr": "Olives",
+              "en": "Olives"
+            },
+            "price": 0,
+            "tags": [
+              "savory"
+            ],
+            "allergens": [],
+            "spice": 0,
+            "vegetarian": true,
+            "vegan": true,
+            "asset": null,
+            "group": null
+          },
+          {
+            "id": "salad.topping.croutons",
+            "category": "salad",
+            "slot": "topping",
+            "name": {
+              "fr": "Croûtons",
+              "en": "Croutons"
+            },
+            "price": 0,
+            "tags": [
+              "crunchy",
+              "savory"
+            ],
+            "allergens": [
+              "gluten"
+            ],
+            "spice": 0,
+            "vegetarian": true,
+            "vegan": true,
+            "asset": "salad/croutons",
+            "group": null
+          },
+          {
+            "id": "salad.topping.grilled_corn",
+            "category": "salad",
+            "slot": "topping",
+            "name": {
+              "fr": "Maïs grillé",
+              "en": "Grilled corn"
+            },
+            "price": 0,
+            "tags": [
+              "sweet",
+              "smoky",
+              "crunchy"
+            ],
+            "allergens": [],
+            "spice": 0,
+            "vegetarian": true,
+            "vegan": true,
+            "asset": null,
+            "group": null
+          },
+          {
+            "id": "salad.topping.walnuts",
+            "category": "salad",
+            "slot": "topping",
+            "name": {
+              "fr": "Noix",
+              "en": "Walnuts"
+            },
+            "price": 0,
+            "tags": [
+              "crunchy",
+              "filling"
+            ],
+            "allergens": [
+              "nuts"
+            ],
+            "spice": 0,
+            "vegetarian": true,
+            "vegan": true,
+            "asset": null,
+            "group": null
+          },
+          {
+            "id": "salad.sauce.caesar",
+            "category": "salad",
+            "slot": "sauce",
+            "name": {
+              "fr": "César",
+              "en": "Caesar"
+            },
+            "price": 0,
+            "tags": [
+              "creamy",
+              "indulgent"
+            ],
+            "allergens": [
+              "dairy",
+              "eggs"
+            ],
+            "spice": 0,
+            "vegetarian": true,
+            "vegan": false,
+            "asset": "salad/sauce_caesar",
+            "group": null
+          },
+          {
+            "id": "salad.sauce.algerian",
+            "category": "salad",
+            "slot": "sauce",
+            "name": {
+              "fr": "Algérienne",
+              "en": "Algerian"
+            },
+            "price": 0,
+            "tags": [
+              "spicy",
+              "creamy"
+            ],
+            "allergens": [
+              "eggs"
+            ],
+            "spice": 2,
+            "vegetarian": true,
+            "vegan": false,
+            "asset": null,
+            "group": null
+          }
+        ],
+        "recommended_items": [],
+        "allergen_scope": [
+          "dairy",
+          "nuts",
+          "gluten",
+          "eggs",
+          "sesame"
+        ],
+        "allergen_note": "Seuls ces 5 allergènes sont suivis. Les traces et contaminations croisées ne sont pas modélisées.",
+        "nutrition_available": false,
+        "availability_tracked": false
+      }
+    },
+    "limits": {
+      "fictional_menu": true,
+      "nutrition_available": false,
+      "availability_tracked": false,
+      "allergen_scope": [
+        "dairy",
+        "nuts",
+        "gluten",
+        "eggs",
+        "sesame"
+      ],
+      "allergen_note": "Seuls ces 5 allergènes sont suivis. Les traces et contaminations croisées ne sont pas modélisées.",
+      "external_order_submitted": false,
+      "payments_supported": false
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,31 @@
+:root{
+  /* 12-KOUL design tokens — sampled from the official logo (see tokens.json for origin per colour) */
+  --kool-red: #D43935;  /* sampled — awning stripe */
+  --kool-red-deep: #A82A27;  /* derived — pressed/hover, error text on paper */
+  --kool-gold: #EBB34A;  /* sampled — sun + banner lettering */
+  --kool-sun-mid: #DF9D5E;  /* sampled — sunburst mid stop */
+  --kool-sun-deep: #CE8049;  /* sampled — sunburst outer stop */
+  --kool-wood: #4D2514;  /* sampled — banner wood */
+  --kool-wood-deep: #3E1F14;  /* sampled — banner shadow */
+  --kool-wood-mid: #5A301D;  /* sampled — banner highlight */
+  --kool-wood-night: #2A140B;  /* derived — page background */
+  --kool-navy: #334D6F;  /* sampled — blazer */
+  --kool-plaid: #577694;  /* sampled — scarf */
+  --kool-white: #FFFFFF;  /* sampled — awning white */
+  --kool-paper: #FFF9EE;  /* derived — ticket paper (warm white) */
+  --kool-stage: radial-gradient(circle at 50% 42%, #EBB34A 0%, #DF9D5E 48%, #CE8049 100%);
+  --kool-awning: repeating-conic-gradient(#D43935 0 10deg, #FFFFFF 10deg 20deg);
+  --font-display: 'Bricolage Grotesque Variable', 'Arial Black', system-ui, sans-serif;
+  --font-body: 'Figtree Variable', system-ui, sans-serif;
+  --step--1:.8125rem; --step-0:1rem; --step-1:1.25rem; --step-2:1.5625rem; --step-3:1.9375rem; --step-4:2.4375rem; --step-5:3.0625rem; --step-6:3.8125rem;
+  --r-ticket:6px; --r-control:10px; --r-panel:14px; --r-pill:999px;
+  --s-1:4px; --s-2:8px; --s-3:12px; --s-4:16px; --s-5:24px; --s-6:32px; --s-7:48px; --s-8:64px;
+  --ease-out: cubic-bezier(.2,.8,.2,1); --ease-in-out: cubic-bezier(.65,0,.35,1);
+  --t-fast:140ms; --t-base:240ms; --t-slow:420ms; --t-scene:700ms;
+  --shadow-soft: 0 6px 18px rgba(42,20,11,.35); --shadow-lift: 0 14px 36px rgba(42,20,11,.45);
+  /* semantic */
+  --bg-page: var(--kool-wood-night); --fg-on-page: var(--kool-paper);
+  --bg-ticket: var(--kool-paper); --fg-on-ticket: var(--kool-wood);
+  --cta-bg: var(--kool-red); --cta-fg: var(--kool-white); --focus-ring: var(--kool-gold);
+}
+@media (prefers-reduced-motion: reduce){:root{--t-fast:0ms;--t-base:0ms;--t-slow:0ms;--t-scene:0ms}}

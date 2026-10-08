@@ -1,0 +1,1766 @@
+{
+  "meta": {
+    "restaurant": "12-KOUL",
+    "slogan": "FAST FOOD & DRINKS",
+    "currency": "MAD",
+    "schema_version": "1.0.0",
+    "fictional": true,
+    "languages": [
+      "fr",
+      "en"
+    ],
+    "default_language": "fr",
+    "allergen_scope": [
+      "dairy",
+      "nuts",
+      "gluten",
+      "eggs",
+      "sesame"
+    ],
+    "allergen_note": {
+      "fr": "Seuls ces 5 allergènes sont suivis. Les traces et contaminations croisées ne sont pas modélisées.",
+      "en": "Only these 5 allergens are tracked. Traces and cross-contamination are not modelled."
+    },
+    "nutrition_available": false,
+    "availability_tracked": false,
+    "rules": {
+      "no_duplicates_within_slot": true,
+      "exact_when_min_equals_max": true,
+      "incomplete_meal_cannot_be_ordered": true
+    }
+  },
+  "categories": {
+    "salad": {
+      "name": {
+        "fr": "Salad Bar",
+        "en": "Salad Bar"
+      },
+      "pricing": {
+        "model": "size_price"
+      },
+      "requires_size": true,
+      "slot_order": [
+        "base",
+        "ingredient",
+        "topping",
+        "sauce"
+      ],
+      "slot_labels": {
+        "base": {
+          "fr": "Base",
+          "en": "Base"
+        },
+        "ingredient": {
+          "fr": "Ingrédients",
+          "en": "Ingredients"
+        },
+        "topping": {
+          "fr": "Toppings",
+          "en": "Toppings"
+        },
+        "sauce": {
+          "fr": "Sauces",
+          "en": "Sauces"
+        }
+      },
+      "sizes": {
+        "small": {
+          "name": {
+            "fr": "Petite salade",
+            "en": "Small salad"
+          },
+          "price": 35,
+          "slots": {
+            "base": {
+              "min": 1,
+              "max": 1
+            },
+            "ingredient": {
+              "min": 2,
+              "max": 2
+            },
+            "topping": {
+              "min": 1,
+              "max": 1
+            },
+            "sauce": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        },
+        "large": {
+          "name": {
+            "fr": "Grande salade",
+            "en": "Large salad"
+          },
+          "price": 55,
+          "slots": {
+            "base": {
+              "min": 2,
+              "max": 2
+            },
+            "ingredient": {
+              "min": 5,
+              "max": 5
+            },
+            "topping": {
+              "min": 3,
+              "max": 3
+            },
+            "sauce": {
+              "min": 2,
+              "max": 2
+            }
+          }
+        }
+      }
+    },
+    "sandwich": {
+      "name": {
+        "fr": "Sandwich",
+        "en": "Sandwich"
+      },
+      "pricing": {
+        "model": "item_sum"
+      },
+      "requires_size": false,
+      "slot_order": [
+        "bread",
+        "protein",
+        "cheese",
+        "vegetable",
+        "sauce",
+        "extra"
+      ],
+      "slot_labels": {
+        "bread": {
+          "fr": "Pain",
+          "en": "Bread"
+        },
+        "protein": {
+          "fr": "Protéine",
+          "en": "Protein"
+        },
+        "cheese": {
+          "fr": "Fromage",
+          "en": "Cheese"
+        },
+        "vegetable": {
+          "fr": "Légumes",
+          "en": "Vegetables"
+        },
+        "sauce": {
+          "fr": "Sauce",
+          "en": "Sauce"
+        },
+        "extra": {
+          "fr": "Extras",
+          "en": "Extras"
+        }
+      },
+      "slots": {
+        "bread": {
+          "min": 1,
+          "max": 1
+        },
+        "protein": {
+          "min": 1,
+          "max": 1
+        },
+        "cheese": {
+          "min": 0,
+          "max": 1
+        },
+        "vegetable": {
+          "min": 0,
+          "max": 3
+        },
+        "sauce": {
+          "min": 1,
+          "max": 1
+        },
+        "extra": {
+          "min": 0,
+          "max": 2
+        }
+      }
+    },
+    "plat": {
+      "name": {
+        "fr": "Plats",
+        "en": "Main dishes"
+      },
+      "pricing": {
+        "model": "item_sum"
+      },
+      "requires_size": false,
+      "slot_order": [
+        "protein",
+        "side",
+        "sauce"
+      ],
+      "slot_labels": {
+        "protein": {
+          "fr": "Protéine",
+          "en": "Protein"
+        },
+        "side": {
+          "fr": "Accompagnement",
+          "en": "Side"
+        },
+        "sauce": {
+          "fr": "Sauce",
+          "en": "Sauce"
+        }
+      },
+      "slots": {
+        "protein": {
+          "min": 1,
+          "max": 1
+        },
+        "side": {
+          "min": 1,
+          "max": 1
+        },
+        "sauce": {
+          "min": 1,
+          "max": 1
+        }
+      }
+    },
+    "drink": {
+      "name": {
+        "fr": "Boissons",
+        "en": "Drinks"
+      },
+      "pricing": {
+        "model": "item_sum"
+      },
+      "requires_size": false,
+      "slot_order": [
+        "drink"
+      ],
+      "slot_labels": {
+        "drink": {
+          "fr": "Boisson",
+          "en": "Drink"
+        }
+      },
+      "groups": {
+        "juice": {
+          "fr": "Jus",
+          "en": "Juices"
+        },
+        "soda": {
+          "fr": "Sodas",
+          "en": "Sodas"
+        },
+        "sparkling_water": {
+          "fr": "Eau gazeuse",
+          "en": "Sparkling water"
+        }
+      },
+      "slots": {
+        "drink": {
+          "min": 1,
+          "max": 1
+        }
+      }
+    }
+  },
+  "items": [
+    {
+      "id": "salad.base.lettuce",
+      "category": "salad",
+      "slot": "base",
+      "name": {
+        "fr": "Laitue",
+        "en": "Lettuce"
+      },
+      "price": 0,
+      "tags": [
+        "fresh",
+        "light",
+        "crunchy"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": "salad/lettuce_leaves"
+    },
+    {
+      "id": "salad.base.arugula",
+      "category": "salad",
+      "slot": "base",
+      "name": {
+        "fr": "Roquette",
+        "en": "Arugula"
+      },
+      "price": 0,
+      "tags": [
+        "fresh",
+        "light",
+        "peppery"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    },
+    {
+      "id": "salad.base.red_cabbage",
+      "category": "salad",
+      "slot": "base",
+      "name": {
+        "fr": "Chou rouge",
+        "en": "Red cabbage"
+      },
+      "price": 0,
+      "tags": [
+        "crunchy",
+        "fresh"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    },
+    {
+      "id": "salad.base.spinach",
+      "category": "salad",
+      "slot": "base",
+      "name": {
+        "fr": "Épinards",
+        "en": "Spinach"
+      },
+      "price": 0,
+      "tags": [
+        "light",
+        "healthy"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    },
+    {
+      "id": "salad.ingredient.tomato",
+      "category": "salad",
+      "slot": "ingredient",
+      "name": {
+        "fr": "Tomate",
+        "en": "Tomato"
+      },
+      "price": 0,
+      "tags": [
+        "fresh",
+        "light"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": "salad/tomato_wedges"
+    },
+    {
+      "id": "salad.ingredient.cucumber",
+      "category": "salad",
+      "slot": "ingredient",
+      "name": {
+        "fr": "Concombre",
+        "en": "Cucumber"
+      },
+      "price": 0,
+      "tags": [
+        "fresh",
+        "light",
+        "crunchy"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": "salad/cucumber_slices"
+    },
+    {
+      "id": "salad.ingredient.corn",
+      "category": "salad",
+      "slot": "ingredient",
+      "name": {
+        "fr": "Maïs",
+        "en": "Corn"
+      },
+      "price": 0,
+      "tags": [
+        "sweet",
+        "light"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": "salad/corn_kernels"
+    },
+    {
+      "id": "salad.ingredient.carrot",
+      "category": "salad",
+      "slot": "ingredient",
+      "name": {
+        "fr": "Carotte",
+        "en": "Carrot"
+      },
+      "price": 0,
+      "tags": [
+        "crunchy",
+        "sweet",
+        "light"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    },
+    {
+      "id": "salad.ingredient.olives",
+      "category": "salad",
+      "slot": "ingredient",
+      "name": {
+        "fr": "Olives",
+        "en": "Olives"
+      },
+      "price": 0,
+      "tags": [
+        "savory"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    },
+    {
+      "id": "salad.ingredient.red_onion",
+      "category": "salad",
+      "slot": "ingredient",
+      "name": {
+        "fr": "Oignon rouge",
+        "en": "Red onion"
+      },
+      "price": 0,
+      "tags": [
+        "crunchy",
+        "tangy"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    },
+    {
+      "id": "salad.ingredient.bell_pepper",
+      "category": "salad",
+      "slot": "ingredient",
+      "name": {
+        "fr": "Poivron",
+        "en": "Bell pepper"
+      },
+      "price": 0,
+      "tags": [
+        "crunchy",
+        "fresh",
+        "sweet"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    },
+    {
+      "id": "salad.ingredient.avocado",
+      "category": "salad",
+      "slot": "ingredient",
+      "name": {
+        "fr": "Avocat",
+        "en": "Avocado"
+      },
+      "price": 0,
+      "tags": [
+        "creamy",
+        "filling"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    },
+    {
+      "id": "salad.ingredient.grilled_chicken",
+      "category": "salad",
+      "slot": "ingredient",
+      "name": {
+        "fr": "Poulet grillé",
+        "en": "Grilled chicken"
+      },
+      "price": 0,
+      "tags": [
+        "protein",
+        "filling",
+        "savory"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": false,
+      "vegan": false,
+      "asset": "salad/chicken_strips"
+    },
+    {
+      "id": "salad.ingredient.tuna",
+      "category": "salad",
+      "slot": "ingredient",
+      "name": {
+        "fr": "Thon",
+        "en": "Tuna"
+      },
+      "price": 0,
+      "tags": [
+        "protein",
+        "filling"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": false,
+      "vegan": false,
+      "asset": null
+    },
+    {
+      "id": "salad.ingredient.egg",
+      "category": "salad",
+      "slot": "ingredient",
+      "name": {
+        "fr": "Œuf",
+        "en": "Egg"
+      },
+      "price": 0,
+      "tags": [
+        "protein",
+        "filling"
+      ],
+      "allergens": [
+        "eggs"
+      ],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": false,
+      "asset": null
+    },
+    {
+      "id": "salad.ingredient.mozzarella",
+      "category": "salad",
+      "slot": "ingredient",
+      "name": {
+        "fr": "Mozzarella",
+        "en": "Mozzarella"
+      },
+      "price": 0,
+      "tags": [
+        "creamy",
+        "indulgent"
+      ],
+      "allergens": [
+        "dairy"
+      ],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": false,
+      "asset": null
+    },
+    {
+      "id": "salad.topping.croutons",
+      "category": "salad",
+      "slot": "topping",
+      "name": {
+        "fr": "Croûtons",
+        "en": "Croutons"
+      },
+      "price": 0,
+      "tags": [
+        "crunchy",
+        "savory"
+      ],
+      "allergens": [
+        "gluten"
+      ],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": "salad/croutons"
+    },
+    {
+      "id": "salad.topping.grilled_corn",
+      "category": "salad",
+      "slot": "topping",
+      "name": {
+        "fr": "Maïs grillé",
+        "en": "Grilled corn"
+      },
+      "price": 0,
+      "tags": [
+        "sweet",
+        "smoky",
+        "crunchy"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    },
+    {
+      "id": "salad.topping.walnuts",
+      "category": "salad",
+      "slot": "topping",
+      "name": {
+        "fr": "Noix",
+        "en": "Walnuts"
+      },
+      "price": 0,
+      "tags": [
+        "crunchy",
+        "filling"
+      ],
+      "allergens": [
+        "nuts"
+      ],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    },
+    {
+      "id": "salad.topping.sesame_seeds",
+      "category": "salad",
+      "slot": "topping",
+      "name": {
+        "fr": "Graines de sésame",
+        "en": "Sesame seeds"
+      },
+      "price": 0,
+      "tags": [
+        "crunchy"
+      ],
+      "allergens": [
+        "sesame"
+      ],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    },
+    {
+      "id": "salad.topping.crispy_onions",
+      "category": "salad",
+      "slot": "topping",
+      "name": {
+        "fr": "Oignons croustillants",
+        "en": "Crispy onions"
+      },
+      "price": 0,
+      "tags": [
+        "crunchy",
+        "indulgent"
+      ],
+      "allergens": [
+        "gluten"
+      ],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    },
+    {
+      "id": "salad.sauce.caesar",
+      "category": "salad",
+      "slot": "sauce",
+      "name": {
+        "fr": "César",
+        "en": "Caesar"
+      },
+      "price": 0,
+      "tags": [
+        "creamy",
+        "indulgent"
+      ],
+      "allergens": [
+        "dairy",
+        "eggs"
+      ],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": false,
+      "asset": "salad/sauce_caesar"
+    },
+    {
+      "id": "salad.sauce.algerian",
+      "category": "salad",
+      "slot": "sauce",
+      "name": {
+        "fr": "Algérienne",
+        "en": "Algerian"
+      },
+      "price": 0,
+      "tags": [
+        "spicy",
+        "creamy"
+      ],
+      "allergens": [
+        "eggs"
+      ],
+      "spice": 2,
+      "vegetarian": true,
+      "vegan": false,
+      "asset": null
+    },
+    {
+      "id": "salad.sauce.honey_mustard",
+      "category": "salad",
+      "slot": "sauce",
+      "name": {
+        "fr": "Moutarde miel",
+        "en": "Honey mustard"
+      },
+      "price": 0,
+      "tags": [
+        "sweet",
+        "tangy"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": false,
+      "asset": null
+    },
+    {
+      "id": "salad.sauce.lemon_herbs",
+      "category": "salad",
+      "slot": "sauce",
+      "name": {
+        "fr": "Citron-herbes",
+        "en": "Lemon herbs"
+      },
+      "price": 0,
+      "tags": [
+        "fresh",
+        "light",
+        "tangy"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    },
+    {
+      "id": "salad.sauce.ranch",
+      "category": "salad",
+      "slot": "sauce",
+      "name": {
+        "fr": "Ranch",
+        "en": "Ranch"
+      },
+      "price": 0,
+      "tags": [
+        "creamy"
+      ],
+      "allergens": [
+        "dairy",
+        "eggs"
+      ],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": false,
+      "asset": null
+    },
+    {
+      "id": "sandwich.bread.baguette",
+      "category": "sandwich",
+      "slot": "bread",
+      "name": {
+        "fr": "Baguette",
+        "en": "Baguette"
+      },
+      "price": 0,
+      "tags": [
+        "crunchy"
+      ],
+      "allergens": [
+        "gluten"
+      ],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    },
+    {
+      "id": "sandwich.bread.brioche",
+      "category": "sandwich",
+      "slot": "bread",
+      "name": {
+        "fr": "Brioche",
+        "en": "Brioche"
+      },
+      "price": 0,
+      "tags": [
+        "sweet",
+        "indulgent"
+      ],
+      "allergens": [
+        "gluten",
+        "dairy",
+        "eggs"
+      ],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": false,
+      "asset": null
+    },
+    {
+      "id": "sandwich.bread.whole_wheat",
+      "category": "sandwich",
+      "slot": "bread",
+      "name": {
+        "fr": "Pain complet",
+        "en": "Whole wheat"
+      },
+      "price": 0,
+      "tags": [
+        "healthy",
+        "filling"
+      ],
+      "allergens": [
+        "gluten",
+        "sesame"
+      ],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    },
+    {
+      "id": "sandwich.bread.ciabatta",
+      "category": "sandwich",
+      "slot": "bread",
+      "name": {
+        "fr": "Ciabatta",
+        "en": "Ciabatta"
+      },
+      "price": 0,
+      "tags": [
+        "crunchy"
+      ],
+      "allergens": [
+        "gluten"
+      ],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    },
+    {
+      "id": "sandwich.protein.grilled_chicken",
+      "category": "sandwich",
+      "slot": "protein",
+      "name": {
+        "fr": "Poulet grillé",
+        "en": "Grilled chicken"
+      },
+      "price": 38,
+      "tags": [
+        "protein",
+        "savory"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": false,
+      "vegan": false,
+      "asset": null
+    },
+    {
+      "id": "sandwich.protein.crispy_chicken",
+      "category": "sandwich",
+      "slot": "protein",
+      "name": {
+        "fr": "Poulet croustillant",
+        "en": "Crispy chicken"
+      },
+      "price": 40,
+      "tags": [
+        "protein",
+        "crunchy",
+        "indulgent"
+      ],
+      "allergens": [
+        "gluten",
+        "eggs"
+      ],
+      "spice": 0,
+      "vegetarian": false,
+      "vegan": false,
+      "asset": null
+    },
+    {
+      "id": "sandwich.protein.beef_steak",
+      "category": "sandwich",
+      "slot": "protein",
+      "name": {
+        "fr": "Steak de bœuf",
+        "en": "Beef steak"
+      },
+      "price": 50,
+      "tags": [
+        "protein",
+        "filling",
+        "indulgent"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": false,
+      "vegan": false,
+      "asset": null
+    },
+    {
+      "id": "sandwich.protein.tuna",
+      "category": "sandwich",
+      "slot": "protein",
+      "name": {
+        "fr": "Thon",
+        "en": "Tuna"
+      },
+      "price": 35,
+      "tags": [
+        "protein",
+        "light"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": false,
+      "vegan": false,
+      "asset": null
+    },
+    {
+      "id": "sandwich.cheese.cheddar",
+      "category": "sandwich",
+      "slot": "cheese",
+      "name": {
+        "fr": "Cheddar",
+        "en": "Cheddar"
+      },
+      "price": 0,
+      "tags": [
+        "indulgent"
+      ],
+      "allergens": [
+        "dairy"
+      ],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": false,
+      "asset": null
+    },
+    {
+      "id": "sandwich.cheese.emmental",
+      "category": "sandwich",
+      "slot": "cheese",
+      "name": {
+        "fr": "Emmental",
+        "en": "Emmental"
+      },
+      "price": 0,
+      "tags": [
+        "savory"
+      ],
+      "allergens": [
+        "dairy"
+      ],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": false,
+      "asset": null
+    },
+    {
+      "id": "sandwich.cheese.mozzarella",
+      "category": "sandwich",
+      "slot": "cheese",
+      "name": {
+        "fr": "Mozzarella",
+        "en": "Mozzarella"
+      },
+      "price": 0,
+      "tags": [
+        "creamy"
+      ],
+      "allergens": [
+        "dairy"
+      ],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": false,
+      "asset": null
+    },
+    {
+      "id": "sandwich.vegetable.tomato",
+      "category": "sandwich",
+      "slot": "vegetable",
+      "name": {
+        "fr": "Tomate",
+        "en": "Tomato"
+      },
+      "price": 0,
+      "tags": [
+        "fresh"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    },
+    {
+      "id": "sandwich.vegetable.lettuce",
+      "category": "sandwich",
+      "slot": "vegetable",
+      "name": {
+        "fr": "Laitue",
+        "en": "Lettuce"
+      },
+      "price": 0,
+      "tags": [
+        "fresh",
+        "crunchy"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    },
+    {
+      "id": "sandwich.vegetable.onion",
+      "category": "sandwich",
+      "slot": "vegetable",
+      "name": {
+        "fr": "Oignon",
+        "en": "Onion"
+      },
+      "price": 0,
+      "tags": [
+        "tangy",
+        "crunchy"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    },
+    {
+      "id": "sandwich.vegetable.cucumber",
+      "category": "sandwich",
+      "slot": "vegetable",
+      "name": {
+        "fr": "Concombre",
+        "en": "Cucumber"
+      },
+      "price": 0,
+      "tags": [
+        "fresh",
+        "crunchy"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    },
+    {
+      "id": "sandwich.vegetable.bell_pepper",
+      "category": "sandwich",
+      "slot": "vegetable",
+      "name": {
+        "fr": "Poivron",
+        "en": "Bell pepper"
+      },
+      "price": 0,
+      "tags": [
+        "crunchy",
+        "sweet"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    },
+    {
+      "id": "sandwich.sauce.mayonnaise",
+      "category": "sandwich",
+      "slot": "sauce",
+      "name": {
+        "fr": "Mayonnaise",
+        "en": "Mayonnaise"
+      },
+      "price": 0,
+      "tags": [
+        "creamy"
+      ],
+      "allergens": [
+        "eggs"
+      ],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": false,
+      "asset": null
+    },
+    {
+      "id": "sandwich.sauce.algerian",
+      "category": "sandwich",
+      "slot": "sauce",
+      "name": {
+        "fr": "Algérienne",
+        "en": "Algerian"
+      },
+      "price": 0,
+      "tags": [
+        "spicy",
+        "creamy"
+      ],
+      "allergens": [
+        "eggs"
+      ],
+      "spice": 2,
+      "vegetarian": true,
+      "vegan": false,
+      "asset": null
+    },
+    {
+      "id": "sandwich.sauce.andalouse",
+      "category": "sandwich",
+      "slot": "sauce",
+      "name": {
+        "fr": "Andalouse",
+        "en": "Andalouse"
+      },
+      "price": 0,
+      "tags": [
+        "creamy",
+        "tangy"
+      ],
+      "allergens": [
+        "eggs"
+      ],
+      "spice": 1,
+      "vegetarian": true,
+      "vegan": false,
+      "asset": null
+    },
+    {
+      "id": "sandwich.sauce.caesar",
+      "category": "sandwich",
+      "slot": "sauce",
+      "name": {
+        "fr": "César",
+        "en": "Caesar"
+      },
+      "price": 0,
+      "tags": [
+        "creamy"
+      ],
+      "allergens": [
+        "dairy",
+        "eggs"
+      ],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": false,
+      "asset": null
+    },
+    {
+      "id": "sandwich.sauce.honey_mustard",
+      "category": "sandwich",
+      "slot": "sauce",
+      "name": {
+        "fr": "Moutarde miel",
+        "en": "Honey mustard"
+      },
+      "price": 0,
+      "tags": [
+        "sweet",
+        "tangy"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": false,
+      "asset": null
+    },
+    {
+      "id": "sandwich.extra.egg",
+      "category": "sandwich",
+      "slot": "extra",
+      "name": {
+        "fr": "Œuf",
+        "en": "Egg"
+      },
+      "price": 4,
+      "tags": [
+        "protein"
+      ],
+      "allergens": [
+        "eggs"
+      ],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": false,
+      "asset": null
+    },
+    {
+      "id": "sandwich.extra.bacon",
+      "category": "sandwich",
+      "slot": "extra",
+      "name": {
+        "fr": "Bacon",
+        "en": "Bacon"
+      },
+      "price": 8,
+      "tags": [
+        "smoky",
+        "indulgent"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": false,
+      "vegan": false,
+      "asset": null
+    },
+    {
+      "id": "sandwich.extra.avocado",
+      "category": "sandwich",
+      "slot": "extra",
+      "name": {
+        "fr": "Avocat",
+        "en": "Avocado"
+      },
+      "price": 8,
+      "tags": [
+        "creamy"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    },
+    {
+      "id": "sandwich.extra.extra_cheese",
+      "category": "sandwich",
+      "slot": "extra",
+      "name": {
+        "fr": "Fromage supplémentaire",
+        "en": "Extra cheese"
+      },
+      "price": 5,
+      "tags": [
+        "indulgent"
+      ],
+      "allergens": [
+        "dairy"
+      ],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": false,
+      "asset": null
+    },
+    {
+      "id": "plat.protein.grilled_chicken",
+      "category": "plat",
+      "slot": "protein",
+      "name": {
+        "fr": "Poulet grillé",
+        "en": "Grilled chicken"
+      },
+      "price": 55,
+      "tags": [
+        "protein",
+        "filling"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": false,
+      "vegan": false,
+      "asset": null
+    },
+    {
+      "id": "plat.protein.crispy_chicken",
+      "category": "plat",
+      "slot": "protein",
+      "name": {
+        "fr": "Poulet croustillant",
+        "en": "Crispy chicken"
+      },
+      "price": 52,
+      "tags": [
+        "protein",
+        "crunchy",
+        "indulgent"
+      ],
+      "allergens": [
+        "gluten",
+        "eggs"
+      ],
+      "spice": 0,
+      "vegetarian": false,
+      "vegan": false,
+      "asset": null
+    },
+    {
+      "id": "plat.protein.steak",
+      "category": "plat",
+      "slot": "protein",
+      "name": {
+        "fr": "Steak",
+        "en": "Steak"
+      },
+      "price": 65,
+      "tags": [
+        "protein",
+        "filling",
+        "indulgent"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": false,
+      "vegan": false,
+      "asset": null
+    },
+    {
+      "id": "plat.protein.escalope",
+      "category": "plat",
+      "slot": "protein",
+      "name": {
+        "fr": "Escalope",
+        "en": "Escalope"
+      },
+      "price": 50,
+      "tags": [
+        "protein",
+        "crunchy"
+      ],
+      "allergens": [
+        "gluten",
+        "eggs"
+      ],
+      "spice": 0,
+      "vegetarian": false,
+      "vegan": false,
+      "asset": null
+    },
+    {
+      "id": "plat.protein.brochettes",
+      "category": "plat",
+      "slot": "protein",
+      "name": {
+        "fr": "Brochettes",
+        "en": "Brochettes"
+      },
+      "price": 58,
+      "tags": [
+        "protein",
+        "smoky"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": false,
+      "vegan": false,
+      "asset": null
+    },
+    {
+      "id": "plat.side.fries",
+      "category": "plat",
+      "slot": "side",
+      "name": {
+        "fr": "Frites",
+        "en": "Fries"
+      },
+      "price": 0,
+      "tags": [
+        "crunchy",
+        "indulgent"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    },
+    {
+      "id": "plat.side.rice",
+      "category": "plat",
+      "slot": "side",
+      "name": {
+        "fr": "Riz",
+        "en": "Rice"
+      },
+      "price": 0,
+      "tags": [
+        "filling"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    },
+    {
+      "id": "plat.side.potatoes",
+      "category": "plat",
+      "slot": "side",
+      "name": {
+        "fr": "Pommes de terre",
+        "en": "Potatoes"
+      },
+      "price": 0,
+      "tags": [
+        "filling"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    },
+    {
+      "id": "plat.side.grilled_vegetables",
+      "category": "plat",
+      "slot": "side",
+      "name": {
+        "fr": "Légumes grillés",
+        "en": "Grilled vegetables"
+      },
+      "price": 0,
+      "tags": [
+        "healthy",
+        "smoky",
+        "light"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    },
+    {
+      "id": "plat.sauce.mushroom",
+      "category": "plat",
+      "slot": "sauce",
+      "name": {
+        "fr": "Sauce champignons",
+        "en": "Mushroom sauce"
+      },
+      "price": 0,
+      "tags": [
+        "creamy",
+        "savory"
+      ],
+      "allergens": [
+        "dairy"
+      ],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": false,
+      "asset": null
+    },
+    {
+      "id": "plat.sauce.pepper",
+      "category": "plat",
+      "slot": "sauce",
+      "name": {
+        "fr": "Sauce poivre",
+        "en": "Pepper sauce"
+      },
+      "price": 0,
+      "tags": [
+        "creamy",
+        "spicy"
+      ],
+      "allergens": [
+        "dairy"
+      ],
+      "spice": 1,
+      "vegetarian": true,
+      "vegan": false,
+      "asset": null
+    },
+    {
+      "id": "plat.sauce.barbecue",
+      "category": "plat",
+      "slot": "sauce",
+      "name": {
+        "fr": "Sauce barbecue",
+        "en": "Barbecue sauce"
+      },
+      "price": 0,
+      "tags": [
+        "smoky",
+        "sweet"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    },
+    {
+      "id": "plat.sauce.algerian",
+      "category": "plat",
+      "slot": "sauce",
+      "name": {
+        "fr": "Sauce algérienne",
+        "en": "Algerian sauce"
+      },
+      "price": 0,
+      "tags": [
+        "spicy",
+        "creamy"
+      ],
+      "allergens": [
+        "eggs"
+      ],
+      "spice": 2,
+      "vegetarian": true,
+      "vegan": false,
+      "asset": null
+    },
+    {
+      "id": "drink.drink.orange",
+      "category": "drink",
+      "slot": "drink",
+      "group": "juice",
+      "name": {
+        "fr": "Jus d'orange",
+        "en": "Orange juice"
+      },
+      "price": 15,
+      "tags": [
+        "sweet",
+        "fresh"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    },
+    {
+      "id": "drink.drink.lemon",
+      "category": "drink",
+      "slot": "drink",
+      "group": "juice",
+      "name": {
+        "fr": "Jus de citron",
+        "en": "Lemon juice"
+      },
+      "price": 14,
+      "tags": [
+        "sweet",
+        "fresh"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    },
+    {
+      "id": "drink.drink.apple",
+      "category": "drink",
+      "slot": "drink",
+      "group": "juice",
+      "name": {
+        "fr": "Jus de pomme",
+        "en": "Apple juice"
+      },
+      "price": 14,
+      "tags": [
+        "sweet",
+        "fresh"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    },
+    {
+      "id": "drink.drink.mango",
+      "category": "drink",
+      "slot": "drink",
+      "group": "juice",
+      "name": {
+        "fr": "Jus de mangue",
+        "en": "Mango juice"
+      },
+      "price": 18,
+      "tags": [
+        "sweet",
+        "fresh"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    },
+    {
+      "id": "drink.drink.pineapple",
+      "category": "drink",
+      "slot": "drink",
+      "group": "juice",
+      "name": {
+        "fr": "Jus d'ananas",
+        "en": "Pineapple juice"
+      },
+      "price": 16,
+      "tags": [
+        "sweet",
+        "fresh"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    },
+    {
+      "id": "drink.drink.coca_cola",
+      "category": "drink",
+      "slot": "drink",
+      "group": "soda",
+      "name": {
+        "fr": "Coca-Cola",
+        "en": "Coca-Cola"
+      },
+      "price": 10,
+      "tags": [
+        "sweet"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    },
+    {
+      "id": "drink.drink.sprite",
+      "category": "drink",
+      "slot": "drink",
+      "group": "soda",
+      "name": {
+        "fr": "Sprite",
+        "en": "Sprite"
+      },
+      "price": 10,
+      "tags": [
+        "sweet"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    },
+    {
+      "id": "drink.drink.fanta",
+      "category": "drink",
+      "slot": "drink",
+      "group": "soda",
+      "name": {
+        "fr": "Fanta",
+        "en": "Fanta"
+      },
+      "price": 10,
+      "tags": [
+        "sweet"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    },
+    {
+      "id": "drink.drink.coca_cola_zero",
+      "category": "drink",
+      "slot": "drink",
+      "group": "soda",
+      "name": {
+        "fr": "Coca-Cola Zero",
+        "en": "Coca-Cola Zero"
+      },
+      "price": 10,
+      "tags": [
+        "sweet"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    },
+    {
+      "id": "drink.drink.water_small",
+      "category": "drink",
+      "slot": "drink",
+      "group": "sparkling_water",
+      "name": {
+        "fr": "Eau gazeuse (petite bouteille)",
+        "en": "Sparkling water (small bottle)"
+      },
+      "price": 8,
+      "tags": [
+        "light"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    },
+    {
+      "id": "drink.drink.water_large",
+      "category": "drink",
+      "slot": "drink",
+      "group": "sparkling_water",
+      "name": {
+        "fr": "Eau gazeuse (grande bouteille)",
+        "en": "Sparkling water (large bottle)"
+      },
+      "price": 12,
+      "tags": [
+        "light"
+      ],
+      "allergens": [],
+      "spice": 0,
+      "vegetarian": true,
+      "vegan": true,
+      "asset": null
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "tool": "Built-in image_gen",
+  "assets": {
+    "salad": {
+      "file": "frontend/public/images/salad.png",
+      "prompt": "Use case: ads-marketing. Asset type: desktop restaurant category photograph for 12-KOUL. Create one premium editorial food photograph of a generous ivory ceramic bowl of layered fresh lettuce, glossy tomato wedges, cucumber, corn and grilled chicken. Warm dark walnut restaurant table, softly blurred deep brown background, directional late-afternoon studio light, rich appetizing natural colors, tactile food detail, quiet luxury restaurant advertising. Landscape 3:2 framing, dish centered and filling most of frame, three-quarter elevated food photography angle. No text, no logos, no hands, no additional foods."
+    },
+    "sandwich": {
+      "file": "frontend/public/images/sandwich.png",
+      "prompt": "Use case: ads-marketing. Asset type: desktop restaurant category photograph for 12-KOUL. Create one premium editorial food photograph of an artisanal golden baguette sandwich cut in two, filled with grilled chicken, lettuce, tomato and melted cheddar. Warm dark walnut restaurant table, softly blurred deep brown background, directional late-afternoon studio light, rich appetizing natural colors, tactile food detail, quiet luxury restaurant advertising. Landscape 3:2 framing, dish centered and filling most of frame, three-quarter elevated food photography angle. No text, no logos, no hands, no additional foods."
+    },
+    "plat": {
+      "file": "frontend/public/images/plat.png",
+      "prompt": "Use case: ads-marketing. Asset type: desktop restaurant category photograph for 12-KOUL. Create one premium editorial food photograph of an ivory ceramic plate with grilled chicken breast, golden fries and a small pool of creamy pepper sauce. Warm dark walnut restaurant table, softly blurred deep brown background, directional late-afternoon studio light, rich appetizing natural colors, tactile food detail, quiet luxury restaurant advertising. Landscape 3:2 framing, dish centered and filling most of frame, three-quarter elevated food photography angle. No text, no logos, no hands, no additional foods."
+    },
+    "drink": {
+      "file": "frontend/public/images/drink.png",
+      "prompt": "Use case: ads-marketing. Asset type: desktop restaurant category photograph for 12-KOUL. Create one premium editorial food photograph of a tall elegant glass of fresh orange juice with subtle condensation, beside half an orange. Warm dark walnut restaurant table, softly blurred deep brown background, directional late-afternoon studio light, rich appetizing natural colors, tactile food detail, quiet luxury restaurant advertising. Landscape 3:2 framing, dish centered and filling most of frame, three-quarter elevated food photography angle. No text, no logos, no hands, no additional foods."
+    }
+  }
+}

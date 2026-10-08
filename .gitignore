@@ -1,0 +1,38 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+__pycache__/
+.venv/
+*.pyc
+.ipynb_checkpoints/
+*.local.json
+
+# Secrets and local environments
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+
+# Local evaluation results
+notebook/real-results.local.json
+
+# Frontend dependencies and build output
+node_modules/
+dist/
+
+# Node dependencies
+frontend/node_modules/
+**/node_modules/
+
+# Build and test artifacts
+frontend/dist/
+**/__pycache__/
+.pytest_cache/
+.coverage
+.DS_Store
+
+# Local evaluation outputs
+docs/stage-3.9-local-results.json

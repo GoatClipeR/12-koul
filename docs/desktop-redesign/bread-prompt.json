@@ -1,0 +1,5 @@
+{
+  "tool": "Built-in image_gen",
+  "file": "frontend/public/images/bread-crust.png",
+  "prompt": "Use case: product-mockup. Asset type: seamless tileable PBR albedo texture for a 3D baguette bread crust. A flat orthographic macro scan of golden baked artisanal baguette crust, warm medium golden brown with natural uneven toasted caramel areas, tiny pores and fine irregular microcracks. Entire square is filled with the same crust surface. Photographic material detail. Even diffuse lighting with NO cast shadows, NO directional shading, NO specular highlights, NO visible loaf silhouette, NO cut bread, NO sesame seeds, NO plate or background. No text. Seamless edges. 1024x1024."
+}

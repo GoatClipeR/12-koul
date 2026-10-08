@@ -1,0 +1,4796 @@
+{
+  "strategy": "scoped-eval-v1",
+  "live_calls": 0,
+  "method": "o200k_harmony content token counts plus 512 + 16/message framing reserve. Component tokens are independently measured and not exactly additive across BPE boundaries. No claim to reproduce Groq exact TPM accounting.",
+  "rows": [
+    {
+      "prompt": "v1",
+      "scenario": "normal_order",
+      "before": {
+        "content_tokens": 10565,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11109,
+        "content_characters": 30471,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 2078,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 2622,
+        "content_characters": 7485,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 472,
+          "tokens": 118
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 43,
+          "tokens": 11
+        },
+        "authorization_policy": {
+          "characters": 203,
+          "tokens": 45
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 33,
+          "tokens": 11
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 472,
+          "tokens": 118
+        },
+        "menu_item_data": {
+          "characters": 1121,
+          "tokens": 345
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 40,
+          "tokens": 10
+        },
+        "authorization_policy": {
+          "characters": 196,
+          "tokens": 40
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 33,
+          "tokens": 11
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v1",
+      "scenario": "recommendation",
+      "before": {
+        "content_tokens": 10561,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11105,
+        "content_characters": 30465,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 2074,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 2618,
+        "content_characters": 7479,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 472,
+          "tokens": 118
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 43,
+          "tokens": 11
+        },
+        "authorization_policy": {
+          "characters": 203,
+          "tokens": 45
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 27,
+          "tokens": 7
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 472,
+          "tokens": 118
+        },
+        "menu_item_data": {
+          "characters": 1121,
+          "tokens": 345
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 40,
+          "tokens": 10
+        },
+        "authorization_policy": {
+          "characters": 196,
+          "tokens": 40
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 27,
+          "tokens": 7
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v1",
+      "scenario": "history",
+      "before": {
+        "content_tokens": 10572,
+        "framing_reserve_tokens": 576,
+        "budgeted_input_tokens": 11148,
+        "content_characters": 30511,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 2085,
+        "framing_reserve_tokens": 576,
+        "budgeted_input_tokens": 2661,
+        "content_characters": 7525,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 472,
+          "tokens": 118
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 43,
+          "tokens": 11
+        },
+        "authorization_policy": {
+          "characters": 203,
+          "tokens": 45
+        },
+        "conversation_history": {
+          "characters": 123,
+          "tokens": 35
+        },
+        "scenario_input": {
+          "characters": 21,
+          "tokens": 6
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 472,
+          "tokens": 118
+        },
+        "menu_item_data": {
+          "characters": 1121,
+          "tokens": 345
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 40,
+          "tokens": 10
+        },
+        "authorization_policy": {
+          "characters": 196,
+          "tokens": 40
+        },
+        "conversation_history": {
+          "characters": 116,
+          "tokens": 28
+        },
+        "scenario_input": {
+          "characters": 21,
+          "tokens": 6
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v1",
+      "scenario": "ambiguous",
+      "before": {
+        "content_tokens": 10560,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11104,
+        "content_characters": 30455,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 1730,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 2274,
+        "content_characters": 6350,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 472,
+          "tokens": 118
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 43,
+          "tokens": 11
+        },
+        "authorization_policy": {
+          "characters": 203,
+          "tokens": 45
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 17,
+          "tokens": 6
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 472,
+          "tokens": 118
+        },
+        "menu_item_data": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 40,
+          "tokens": 10
+        },
+        "authorization_policy": {
+          "characters": 196,
+          "tokens": 40
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 17,
+          "tokens": 6
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v1",
+      "scenario": "incomplete_salad",
+      "before": {
+        "content_tokens": 10636,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11180,
+        "content_characters": 30686,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 2662,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 3206,
+        "content_characters": 9173,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 472,
+          "tokens": 118
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 247,
+          "tokens": 80
+        },
+        "authorization_policy": {
+          "characters": 228,
+          "tokens": 53
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 19,
+          "tokens": 5
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 472,
+          "tokens": 118
+        },
+        "menu_item_data": {
+          "characters": 2608,
+          "tokens": 871
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 231,
+          "tokens": 67
+        },
+        "authorization_policy": {
+          "characters": 220,
+          "tokens": 47
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 19,
+          "tokens": 5
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v1",
+      "scenario": "complete_salad",
+      "before": {
+        "content_tokens": 10645,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11189,
+        "content_characters": 30724,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 2670,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 3214,
+        "content_characters": 9210,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 472,
+          "tokens": 118
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 276,
+          "tokens": 88
+        },
+        "authorization_policy": {
+          "characters": 228,
+          "tokens": 53
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 28,
+          "tokens": 6
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 472,
+          "tokens": 118
+        },
+        "menu_item_data": {
+          "characters": 2608,
+          "tokens": 871
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 259,
+          "tokens": 74
+        },
+        "authorization_policy": {
+          "characters": 220,
+          "tokens": 47
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 28,
+          "tokens": 6
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v1",
+      "scenario": "excess_ingredient",
+      "before": {
+        "content_tokens": 10699,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11243,
+        "content_characters": 30879,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 2718,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 3262,
+        "content_characters": 9359,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 472,
+          "tokens": 118
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 456,
+          "tokens": 148
+        },
+        "authorization_policy": {
+          "characters": 203,
+          "tokens": 45
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 28,
+          "tokens": 8
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 472,
+          "tokens": 118
+        },
+        "menu_item_data": {
+          "characters": 2608,
+          "tokens": 871
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 432,
+          "tokens": 127
+        },
+        "authorization_policy": {
+          "characters": 196,
+          "tokens": 40
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 28,
+          "tokens": 8
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v1",
+      "scenario": "out_of_domain",
+      "before": {
+        "content_tokens": 10562,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11106,
+        "content_characters": 30472,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 1732,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 2276,
+        "content_characters": 6367,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 472,
+          "tokens": 118
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 43,
+          "tokens": 11
+        },
+        "authorization_policy": {
+          "characters": 203,
+          "tokens": 45
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 34,
+          "tokens": 8
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 472,
+          "tokens": 118
+        },
+        "menu_item_data": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 40,
+          "tokens": 10
+        },
+        "authorization_policy": {
+          "characters": 196,
+          "tokens": 40
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 34,
+          "tokens": 8
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v1",
+      "scenario": "unsupported_sensitive",
+      "before": {
+        "content_tokens": 10572,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11116,
+        "content_characters": 30517,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 1742,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 2286,
+        "content_characters": 6412,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 472,
+          "tokens": 118
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 43,
+          "tokens": 11
+        },
+        "authorization_policy": {
+          "characters": 203,
+          "tokens": 45
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 79,
+          "tokens": 18
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 472,
+          "tokens": 118
+        },
+        "menu_item_data": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 40,
+          "tokens": 10
+        },
+        "authorization_policy": {
+          "characters": 196,
+          "tokens": 40
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 79,
+          "tokens": 18
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v1",
+      "scenario": "prompt_injection",
+      "before": {
+        "content_tokens": 10574,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11118,
+        "content_characters": 30527,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 1744,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 2288,
+        "content_characters": 6422,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 472,
+          "tokens": 118
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 43,
+          "tokens": 11
+        },
+        "authorization_policy": {
+          "characters": 203,
+          "tokens": 45
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 89,
+          "tokens": 20
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 472,
+          "tokens": 118
+        },
+        "menu_item_data": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 40,
+          "tokens": 10
+        },
+        "authorization_policy": {
+          "characters": 196,
+          "tokens": 40
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 89,
+          "tokens": 20
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v1",
+      "scenario": "size_conflict",
+      "before": {
+        "content_tokens": 10701,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11245,
+        "content_characters": 30902,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 2720,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 3264,
+        "content_characters": 9382,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 472,
+          "tokens": 118
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 456,
+          "tokens": 148
+        },
+        "authorization_policy": {
+          "characters": 203,
+          "tokens": 45
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 51,
+          "tokens": 10
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 472,
+          "tokens": 118
+        },
+        "menu_item_data": {
+          "characters": 2608,
+          "tokens": 871
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 432,
+          "tokens": 127
+        },
+        "authorization_policy": {
+          "characters": 196,
+          "tokens": 40
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 51,
+          "tokens": 10
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v1",
+      "scenario": "invented_item",
+      "before": {
+        "content_tokens": 10559,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11103,
+        "content_characters": 30455,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 1729,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 2273,
+        "content_characters": 6350,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 472,
+          "tokens": 118
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 43,
+          "tokens": 11
+        },
+        "authorization_policy": {
+          "characters": 203,
+          "tokens": 45
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 17,
+          "tokens": 5
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 472,
+          "tokens": 118
+        },
+        "menu_item_data": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 40,
+          "tokens": 10
+        },
+        "authorization_policy": {
+          "characters": 196,
+          "tokens": 40
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 17,
+          "tokens": 5
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v1",
+      "scenario": "price_override",
+      "before": {
+        "content_tokens": 10561,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11105,
+        "content_characters": 30462,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 2074,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 2618,
+        "content_characters": 7476,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 472,
+          "tokens": 118
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 43,
+          "tokens": 11
+        },
+        "authorization_policy": {
+          "characters": 203,
+          "tokens": 45
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 24,
+          "tokens": 7
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 472,
+          "tokens": 118
+        },
+        "menu_item_data": {
+          "characters": 1121,
+          "tokens": 345
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 40,
+          "tokens": 10
+        },
+        "authorization_policy": {
+          "characters": 196,
+          "tokens": 40
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 24,
+          "tokens": 7
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v1",
+      "scenario": "large_missing_base",
+      "before": {
+        "content_tokens": 10697,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11241,
+        "content_characters": 30883,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 2716,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 3260,
+        "content_characters": 9363,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 472,
+          "tokens": 118
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 434,
+          "tokens": 140
+        },
+        "authorization_policy": {
+          "characters": 228,
+          "tokens": 53
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 29,
+          "tokens": 6
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 472,
+          "tokens": 118
+        },
+        "menu_item_data": {
+          "characters": 2608,
+          "tokens": 871
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 411,
+          "tokens": 120
+        },
+        "authorization_policy": {
+          "characters": 220,
+          "tokens": 47
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 29,
+          "tokens": 6
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v2",
+      "scenario": "normal_order",
+      "before": {
+        "content_tokens": 10688,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11232,
+        "content_characters": 31037,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 2201,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 2745,
+        "content_characters": 8051,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 1038,
+          "tokens": 241
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 43,
+          "tokens": 11
+        },
+        "authorization_policy": {
+          "characters": 203,
+          "tokens": 45
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 33,
+          "tokens": 11
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 1038,
+          "tokens": 241
+        },
+        "menu_item_data": {
+          "characters": 1121,
+          "tokens": 345
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 40,
+          "tokens": 10
+        },
+        "authorization_policy": {
+          "characters": 196,
+          "tokens": 40
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 33,
+          "tokens": 11
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v2",
+      "scenario": "recommendation",
+      "before": {
+        "content_tokens": 10684,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11228,
+        "content_characters": 31031,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 2197,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 2741,
+        "content_characters": 8045,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 1038,
+          "tokens": 241
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 43,
+          "tokens": 11
+        },
+        "authorization_policy": {
+          "characters": 203,
+          "tokens": 45
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 27,
+          "tokens": 7
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 1038,
+          "tokens": 241
+        },
+        "menu_item_data": {
+          "characters": 1121,
+          "tokens": 345
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 40,
+          "tokens": 10
+        },
+        "authorization_policy": {
+          "characters": 196,
+          "tokens": 40
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 27,
+          "tokens": 7
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v2",
+      "scenario": "history",
+      "before": {
+        "content_tokens": 10695,
+        "framing_reserve_tokens": 576,
+        "budgeted_input_tokens": 11271,
+        "content_characters": 31077,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 2208,
+        "framing_reserve_tokens": 576,
+        "budgeted_input_tokens": 2784,
+        "content_characters": 8091,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 1038,
+          "tokens": 241
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 43,
+          "tokens": 11
+        },
+        "authorization_policy": {
+          "characters": 203,
+          "tokens": 45
+        },
+        "conversation_history": {
+          "characters": 123,
+          "tokens": 35
+        },
+        "scenario_input": {
+          "characters": 21,
+          "tokens": 6
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 1038,
+          "tokens": 241
+        },
+        "menu_item_data": {
+          "characters": 1121,
+          "tokens": 345
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 40,
+          "tokens": 10
+        },
+        "authorization_policy": {
+          "characters": 196,
+          "tokens": 40
+        },
+        "conversation_history": {
+          "characters": 116,
+          "tokens": 28
+        },
+        "scenario_input": {
+          "characters": 21,
+          "tokens": 6
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v2",
+      "scenario": "ambiguous",
+      "before": {
+        "content_tokens": 10683,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11227,
+        "content_characters": 31021,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 1853,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 2397,
+        "content_characters": 6916,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 1038,
+          "tokens": 241
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 43,
+          "tokens": 11
+        },
+        "authorization_policy": {
+          "characters": 203,
+          "tokens": 45
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 17,
+          "tokens": 6
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 1038,
+          "tokens": 241
+        },
+        "menu_item_data": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 40,
+          "tokens": 10
+        },
+        "authorization_policy": {
+          "characters": 196,
+          "tokens": 40
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 17,
+          "tokens": 6
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v2",
+      "scenario": "incomplete_salad",
+      "before": {
+        "content_tokens": 10759,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11303,
+        "content_characters": 31252,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 2785,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 3329,
+        "content_characters": 9739,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 1038,
+          "tokens": 241
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 247,
+          "tokens": 80
+        },
+        "authorization_policy": {
+          "characters": 228,
+          "tokens": 53
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 19,
+          "tokens": 5
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 1038,
+          "tokens": 241
+        },
+        "menu_item_data": {
+          "characters": 2608,
+          "tokens": 871
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 231,
+          "tokens": 67
+        },
+        "authorization_policy": {
+          "characters": 220,
+          "tokens": 47
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 19,
+          "tokens": 5
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v2",
+      "scenario": "complete_salad",
+      "before": {
+        "content_tokens": 10768,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11312,
+        "content_characters": 31290,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 2793,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 3337,
+        "content_characters": 9776,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 1038,
+          "tokens": 241
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 276,
+          "tokens": 88
+        },
+        "authorization_policy": {
+          "characters": 228,
+          "tokens": 53
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 28,
+          "tokens": 6
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 1038,
+          "tokens": 241
+        },
+        "menu_item_data": {
+          "characters": 2608,
+          "tokens": 871
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 259,
+          "tokens": 74
+        },
+        "authorization_policy": {
+          "characters": 220,
+          "tokens": 47
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 28,
+          "tokens": 6
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v2",
+      "scenario": "excess_ingredient",
+      "before": {
+        "content_tokens": 10822,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11366,
+        "content_characters": 31445,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 2841,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 3385,
+        "content_characters": 9925,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 1038,
+          "tokens": 241
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 456,
+          "tokens": 148
+        },
+        "authorization_policy": {
+          "characters": 203,
+          "tokens": 45
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 28,
+          "tokens": 8
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 1038,
+          "tokens": 241
+        },
+        "menu_item_data": {
+          "characters": 2608,
+          "tokens": 871
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 432,
+          "tokens": 127
+        },
+        "authorization_policy": {
+          "characters": 196,
+          "tokens": 40
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 28,
+          "tokens": 8
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v2",
+      "scenario": "out_of_domain",
+      "before": {
+        "content_tokens": 10685,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11229,
+        "content_characters": 31038,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 1855,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 2399,
+        "content_characters": 6933,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 1038,
+          "tokens": 241
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 43,
+          "tokens": 11
+        },
+        "authorization_policy": {
+          "characters": 203,
+          "tokens": 45
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 34,
+          "tokens": 8
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 1038,
+          "tokens": 241
+        },
+        "menu_item_data": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 40,
+          "tokens": 10
+        },
+        "authorization_policy": {
+          "characters": 196,
+          "tokens": 40
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 34,
+          "tokens": 8
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v2",
+      "scenario": "unsupported_sensitive",
+      "before": {
+        "content_tokens": 10695,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11239,
+        "content_characters": 31083,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 1865,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 2409,
+        "content_characters": 6978,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 1038,
+          "tokens": 241
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 43,
+          "tokens": 11
+        },
+        "authorization_policy": {
+          "characters": 203,
+          "tokens": 45
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 79,
+          "tokens": 18
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 1038,
+          "tokens": 241
+        },
+        "menu_item_data": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 40,
+          "tokens": 10
+        },
+        "authorization_policy": {
+          "characters": 196,
+          "tokens": 40
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 79,
+          "tokens": 18
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v2",
+      "scenario": "prompt_injection",
+      "before": {
+        "content_tokens": 10697,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11241,
+        "content_characters": 31093,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 1867,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 2411,
+        "content_characters": 6988,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 1038,
+          "tokens": 241
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 43,
+          "tokens": 11
+        },
+        "authorization_policy": {
+          "characters": 203,
+          "tokens": 45
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 89,
+          "tokens": 20
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 1038,
+          "tokens": 241
+        },
+        "menu_item_data": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 40,
+          "tokens": 10
+        },
+        "authorization_policy": {
+          "characters": 196,
+          "tokens": 40
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 89,
+          "tokens": 20
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v2",
+      "scenario": "size_conflict",
+      "before": {
+        "content_tokens": 10824,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11368,
+        "content_characters": 31468,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 2843,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 3387,
+        "content_characters": 9948,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 1038,
+          "tokens": 241
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 456,
+          "tokens": 148
+        },
+        "authorization_policy": {
+          "characters": 203,
+          "tokens": 45
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 51,
+          "tokens": 10
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 1038,
+          "tokens": 241
+        },
+        "menu_item_data": {
+          "characters": 2608,
+          "tokens": 871
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 432,
+          "tokens": 127
+        },
+        "authorization_policy": {
+          "characters": 196,
+          "tokens": 40
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 51,
+          "tokens": 10
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v2",
+      "scenario": "invented_item",
+      "before": {
+        "content_tokens": 10682,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11226,
+        "content_characters": 31021,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 1852,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 2396,
+        "content_characters": 6916,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 1038,
+          "tokens": 241
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 43,
+          "tokens": 11
+        },
+        "authorization_policy": {
+          "characters": 203,
+          "tokens": 45
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 17,
+          "tokens": 5
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 1038,
+          "tokens": 241
+        },
+        "menu_item_data": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 40,
+          "tokens": 10
+        },
+        "authorization_policy": {
+          "characters": 196,
+          "tokens": 40
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 17,
+          "tokens": 5
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v2",
+      "scenario": "price_override",
+      "before": {
+        "content_tokens": 10684,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11228,
+        "content_characters": 31028,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 2197,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 2741,
+        "content_characters": 8042,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 1038,
+          "tokens": 241
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 43,
+          "tokens": 11
+        },
+        "authorization_policy": {
+          "characters": 203,
+          "tokens": 45
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 24,
+          "tokens": 7
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 1038,
+          "tokens": 241
+        },
+        "menu_item_data": {
+          "characters": 1121,
+          "tokens": 345
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 40,
+          "tokens": 10
+        },
+        "authorization_policy": {
+          "characters": 196,
+          "tokens": 40
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 24,
+          "tokens": 7
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v2",
+      "scenario": "large_missing_base",
+      "before": {
+        "content_tokens": 10820,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11364,
+        "content_characters": 31449,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 2839,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 3383,
+        "content_characters": 9929,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 1038,
+          "tokens": 241
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 434,
+          "tokens": 140
+        },
+        "authorization_policy": {
+          "characters": 228,
+          "tokens": 53
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 29,
+          "tokens": 6
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 1038,
+          "tokens": 241
+        },
+        "menu_item_data": {
+          "characters": 2608,
+          "tokens": 871
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 411,
+          "tokens": 120
+        },
+        "authorization_policy": {
+          "characters": 220,
+          "tokens": 47
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 29,
+          "tokens": 6
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v3",
+      "scenario": "normal_order",
+      "before": {
+        "content_tokens": 11211,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11755,
+        "content_characters": 33394,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 2724,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 3268,
+        "content_characters": 10408,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 3395,
+          "tokens": 764
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 43,
+          "tokens": 11
+        },
+        "authorization_policy": {
+          "characters": 203,
+          "tokens": 45
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 33,
+          "tokens": 11
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 3395,
+          "tokens": 764
+        },
+        "menu_item_data": {
+          "characters": 1121,
+          "tokens": 345
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 40,
+          "tokens": 10
+        },
+        "authorization_policy": {
+          "characters": 196,
+          "tokens": 40
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 33,
+          "tokens": 11
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v3",
+      "scenario": "recommendation",
+      "before": {
+        "content_tokens": 11207,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11751,
+        "content_characters": 33388,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 2720,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 3264,
+        "content_characters": 10402,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 3395,
+          "tokens": 764
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 43,
+          "tokens": 11
+        },
+        "authorization_policy": {
+          "characters": 203,
+          "tokens": 45
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 27,
+          "tokens": 7
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 3395,
+          "tokens": 764
+        },
+        "menu_item_data": {
+          "characters": 1121,
+          "tokens": 345
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 40,
+          "tokens": 10
+        },
+        "authorization_policy": {
+          "characters": 196,
+          "tokens": 40
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 27,
+          "tokens": 7
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v3",
+      "scenario": "history",
+      "before": {
+        "content_tokens": 11218,
+        "framing_reserve_tokens": 576,
+        "budgeted_input_tokens": 11794,
+        "content_characters": 33434,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 2731,
+        "framing_reserve_tokens": 576,
+        "budgeted_input_tokens": 3307,
+        "content_characters": 10448,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 3395,
+          "tokens": 764
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 43,
+          "tokens": 11
+        },
+        "authorization_policy": {
+          "characters": 203,
+          "tokens": 45
+        },
+        "conversation_history": {
+          "characters": 123,
+          "tokens": 35
+        },
+        "scenario_input": {
+          "characters": 21,
+          "tokens": 6
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 3395,
+          "tokens": 764
+        },
+        "menu_item_data": {
+          "characters": 1121,
+          "tokens": 345
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 40,
+          "tokens": 10
+        },
+        "authorization_policy": {
+          "characters": 196,
+          "tokens": 40
+        },
+        "conversation_history": {
+          "characters": 116,
+          "tokens": 28
+        },
+        "scenario_input": {
+          "characters": 21,
+          "tokens": 6
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v3",
+      "scenario": "ambiguous",
+      "before": {
+        "content_tokens": 11206,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11750,
+        "content_characters": 33378,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 2376,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 2920,
+        "content_characters": 9273,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 3395,
+          "tokens": 764
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 43,
+          "tokens": 11
+        },
+        "authorization_policy": {
+          "characters": 203,
+          "tokens": 45
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 17,
+          "tokens": 6
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 3395,
+          "tokens": 764
+        },
+        "menu_item_data": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 40,
+          "tokens": 10
+        },
+        "authorization_policy": {
+          "characters": 196,
+          "tokens": 40
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 17,
+          "tokens": 6
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v3",
+      "scenario": "incomplete_salad",
+      "before": {
+        "content_tokens": 11282,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11826,
+        "content_characters": 33609,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 3308,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 3852,
+        "content_characters": 12096,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 3395,
+          "tokens": 764
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 247,
+          "tokens": 80
+        },
+        "authorization_policy": {
+          "characters": 228,
+          "tokens": 53
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 19,
+          "tokens": 5
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 3395,
+          "tokens": 764
+        },
+        "menu_item_data": {
+          "characters": 2608,
+          "tokens": 871
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 231,
+          "tokens": 67
+        },
+        "authorization_policy": {
+          "characters": 220,
+          "tokens": 47
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 19,
+          "tokens": 5
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v3",
+      "scenario": "complete_salad",
+      "before": {
+        "content_tokens": 11291,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11835,
+        "content_characters": 33647,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 3316,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 3860,
+        "content_characters": 12133,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 3395,
+          "tokens": 764
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 276,
+          "tokens": 88
+        },
+        "authorization_policy": {
+          "characters": 228,
+          "tokens": 53
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 28,
+          "tokens": 6
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 3395,
+          "tokens": 764
+        },
+        "menu_item_data": {
+          "characters": 2608,
+          "tokens": 871
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 259,
+          "tokens": 74
+        },
+        "authorization_policy": {
+          "characters": 220,
+          "tokens": 47
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 28,
+          "tokens": 6
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v3",
+      "scenario": "excess_ingredient",
+      "before": {
+        "content_tokens": 11345,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11889,
+        "content_characters": 33802,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 3364,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 3908,
+        "content_characters": 12282,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 3395,
+          "tokens": 764
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 456,
+          "tokens": 148
+        },
+        "authorization_policy": {
+          "characters": 203,
+          "tokens": 45
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 28,
+          "tokens": 8
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 3395,
+          "tokens": 764
+        },
+        "menu_item_data": {
+          "characters": 2608,
+          "tokens": 871
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 432,
+          "tokens": 127
+        },
+        "authorization_policy": {
+          "characters": 196,
+          "tokens": 40
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 28,
+          "tokens": 8
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v3",
+      "scenario": "out_of_domain",
+      "before": {
+        "content_tokens": 11208,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11752,
+        "content_characters": 33395,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 2378,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 2922,
+        "content_characters": 9290,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 3395,
+          "tokens": 764
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 43,
+          "tokens": 11
+        },
+        "authorization_policy": {
+          "characters": 203,
+          "tokens": 45
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 34,
+          "tokens": 8
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 3395,
+          "tokens": 764
+        },
+        "menu_item_data": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 40,
+          "tokens": 10
+        },
+        "authorization_policy": {
+          "characters": 196,
+          "tokens": 40
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 34,
+          "tokens": 8
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v3",
+      "scenario": "unsupported_sensitive",
+      "before": {
+        "content_tokens": 11218,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11762,
+        "content_characters": 33440,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 2388,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 2932,
+        "content_characters": 9335,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 3395,
+          "tokens": 764
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 43,
+          "tokens": 11
+        },
+        "authorization_policy": {
+          "characters": 203,
+          "tokens": 45
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 79,
+          "tokens": 18
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 3395,
+          "tokens": 764
+        },
+        "menu_item_data": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 40,
+          "tokens": 10
+        },
+        "authorization_policy": {
+          "characters": 196,
+          "tokens": 40
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 79,
+          "tokens": 18
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v3",
+      "scenario": "prompt_injection",
+      "before": {
+        "content_tokens": 11220,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11764,
+        "content_characters": 33450,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 2390,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 2934,
+        "content_characters": 9345,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 3395,
+          "tokens": 764
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 43,
+          "tokens": 11
+        },
+        "authorization_policy": {
+          "characters": 203,
+          "tokens": 45
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 89,
+          "tokens": 20
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 3395,
+          "tokens": 764
+        },
+        "menu_item_data": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 40,
+          "tokens": 10
+        },
+        "authorization_policy": {
+          "characters": 196,
+          "tokens": 40
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 89,
+          "tokens": 20
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v3",
+      "scenario": "size_conflict",
+      "before": {
+        "content_tokens": 11347,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11891,
+        "content_characters": 33825,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 3366,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 3910,
+        "content_characters": 12305,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 3395,
+          "tokens": 764
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 456,
+          "tokens": 148
+        },
+        "authorization_policy": {
+          "characters": 203,
+          "tokens": 45
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 51,
+          "tokens": 10
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 3395,
+          "tokens": 764
+        },
+        "menu_item_data": {
+          "characters": 2608,
+          "tokens": 871
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 432,
+          "tokens": 127
+        },
+        "authorization_policy": {
+          "characters": 196,
+          "tokens": 40
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 51,
+          "tokens": 10
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v3",
+      "scenario": "invented_item",
+      "before": {
+        "content_tokens": 11205,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11749,
+        "content_characters": 33378,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 2375,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 2919,
+        "content_characters": 9273,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 3395,
+          "tokens": 764
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 43,
+          "tokens": 11
+        },
+        "authorization_policy": {
+          "characters": 203,
+          "tokens": 45
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 17,
+          "tokens": 5
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 3395,
+          "tokens": 764
+        },
+        "menu_item_data": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 40,
+          "tokens": 10
+        },
+        "authorization_policy": {
+          "characters": 196,
+          "tokens": 40
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 17,
+          "tokens": 5
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v3",
+      "scenario": "price_override",
+      "before": {
+        "content_tokens": 11207,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11751,
+        "content_characters": 33385,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 2720,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 3264,
+        "content_characters": 10399,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 3395,
+          "tokens": 764
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 43,
+          "tokens": 11
+        },
+        "authorization_policy": {
+          "characters": 203,
+          "tokens": 45
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 24,
+          "tokens": 7
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 3395,
+          "tokens": 764
+        },
+        "menu_item_data": {
+          "characters": 1121,
+          "tokens": 345
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 40,
+          "tokens": 10
+        },
+        "authorization_policy": {
+          "characters": 196,
+          "tokens": 40
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 24,
+          "tokens": 7
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    },
+    {
+      "prompt": "v3",
+      "scenario": "large_missing_base",
+      "before": {
+        "content_tokens": 11343,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 11887,
+        "content_characters": 33806,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "after": {
+        "content_tokens": 3362,
+        "framing_reserve_tokens": 544,
+        "budgeted_input_tokens": 3906,
+        "content_characters": 12286,
+        "input_budget": 6000,
+        "tokenizer": "o200k_harmony",
+        "note": "Local BPE counts plus conservative framing reserve; Groq usage is authoritative."
+      },
+      "before_components": {
+        "system_prompt": {
+          "characters": 3395,
+          "tokens": 764
+        },
+        "menu_item_data": {
+          "characters": 19021,
+          "tokens": 6891
+        },
+        "meal_rules_and_pricing": {
+          "characters": 1079,
+          "tokens": 433
+        },
+        "category_labels": {
+          "characters": 1298,
+          "tokens": 466
+        },
+        "menu_meta": {
+          "characters": 645,
+          "tokens": 189
+        },
+        "action_schema": {
+          "characters": 7613,
+          "tokens": 2389
+        },
+        "meal_state": {
+          "characters": 434,
+          "tokens": 140
+        },
+        "authorization_policy": {
+          "characters": 228,
+          "tokens": 53
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 29,
+          "tokens": 6
+        },
+        "scope_and_table_legend": {
+          "characters": 2,
+          "tokens": 1
+        }
+      },
+      "after_components": {
+        "system_prompt": {
+          "characters": 3395,
+          "tokens": 764
+        },
+        "menu_item_data": {
+          "characters": 2608,
+          "tokens": 871
+        },
+        "meal_rules_and_pricing": {
+          "characters": 846,
+          "tokens": 281
+        },
+        "category_labels": {
+          "characters": 207,
+          "tokens": 65
+        },
+        "menu_meta": {
+          "characters": 609,
+          "tokens": 161
+        },
+        "action_schema": {
+          "characters": 3489,
+          "tokens": 950
+        },
+        "meal_state": {
+          "characters": 411,
+          "tokens": 120
+        },
+        "authorization_policy": {
+          "characters": 220,
+          "tokens": 47
+        },
+        "conversation_history": {
+          "characters": 2,
+          "tokens": 1
+        },
+        "scenario_input": {
+          "characters": 29,
+          "tokens": 6
+        },
+        "scope_and_table_legend": {
+          "characters": 401,
+          "tokens": 88
+        }
+      }
+    }
+  ],
+  "max_after_budgeted_tokens": 3910
+}

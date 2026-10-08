@@ -1,0 +1,107 @@
+{
+  "purpose": "Seven-ingredient salad vertical slice: initial procedural GLBs implemented; final artistic and device-performance review pending.",
+  "style": "premium semi-realistic stylized PBR — food-advertising look, realistic proportions, warm studio light; not cartoonish, not photoreal",
+  "budgets_target": {
+    "triangles_desktop": 150000,
+    "triangles_mobile": 80000,
+    "draw_calls": 60,
+    "texture_memory_mb": 32,
+    "instances_per_ingredient_max": 250
+  },
+  "assets": [
+    {
+      "key": "bowl",
+      "menu_id": null,
+      "approach": "GLB preferred (CC0 or generated) — fallback: lathe-built bowl",
+      "spec": "wide shallow salad bowl, ~28 cm diameter, <=15k tris, ceramic or wood PBR, known interior volume for placement",
+      "status": "initial_procedural_slice",
+      "file": "frontend/public/models/salad/bowl.glb",
+      "bytes": 93864,
+      "generator": "frontend/tools/generate-salad-assets.mjs"
+    },
+    {
+      "key": "salad/lettuce_leaves",
+      "menu_id": "salad.base.lettuce",
+      "approach": "procedural",
+      "spec": "3 ruffled leaf variants (noise-displaced, edge-curled), base-to-edge colour gradient, fake translucency, instanced",
+      "status": "initial_procedural_slice",
+      "file": "frontend/public/models/salad/lettuce.glb",
+      "bytes": 25468,
+      "generator": "frontend/tools/generate-salad-assets.mjs"
+    },
+    {
+      "key": "salad/tomato_wedges",
+      "menu_id": "salad.ingredient.tomato",
+      "approach": "procedural",
+      "spec": "2 wedge variants with flesh, seed chambers, glossy skin; generated flesh texture",
+      "status": "initial_procedural_slice",
+      "file": "frontend/public/models/salad/tomato.glb",
+      "bytes": 73416,
+      "generator": "frontend/tools/generate-salad-assets.mjs"
+    },
+    {
+      "key": "salad/cucumber_slices",
+      "menu_id": "salad.ingredient.cucumber",
+      "approach": "procedural",
+      "spec": "2 bevelled slice variants, dark skin ring, pale flesh, radial seed pattern",
+      "status": "initial_procedural_slice",
+      "file": "frontend/public/models/salad/cucumber.glb",
+      "bytes": 53188,
+      "generator": "frontend/tools/generate-salad-assets.mjs"
+    },
+    {
+      "key": "salad/chicken_strips",
+      "menu_id": "salad.ingredient.grilled_chicken",
+      "approach": "procedural (Higgsfield test candidate if callable)",
+      "spec": "3 irregular extruded strip variants, grill-mark albedo + bump, roughness variation",
+      "status": "initial_procedural_slice",
+      "file": "frontend/public/models/salad/chicken.glb",
+      "bytes": 15180,
+      "generator": "frontend/tools/generate-salad-assets.mjs"
+    },
+    {
+      "key": "salad/corn_kernels",
+      "menu_id": "salad.ingredient.corn",
+      "approach": "procedural",
+      "spec": "1 kernel mesh, ~200 instances, per-instance colour variation, specular highlight",
+      "status": "initial_procedural_slice",
+      "file": "frontend/public/models/salad/corn.glb",
+      "bytes": 5428,
+      "generator": "frontend/tools/generate-salad-assets.mjs"
+    },
+    {
+      "key": "salad/croutons",
+      "menu_id": "salad.topping.croutons",
+      "approach": "procedural",
+      "spec": "3 bevelled, noise-displaced bread-cube variants with crumb texture and toasted-edge gradient",
+      "status": "initial_procedural_slice",
+      "file": "frontend/public/models/salad/croutons.glb",
+      "bytes": 53628,
+      "generator": "frontend/tools/generate-salad-assets.mjs"
+    },
+    {
+      "key": "salad/sauce_caesar",
+      "menu_id": "salad.sauce.caesar",
+      "approach": "procedural",
+      "spec": "animated drizzle along a noisy path + small puddles; creamy off-white clearcoat material",
+      "status": "initial_procedural_slice",
+      "file": "frontend/public/models/salad/caesar.glb",
+      "bytes": 38500,
+      "generator": "frontend/tools/generate-salad-assets.mjs"
+    },
+    {
+      "key": "env/studio_warm",
+      "menu_id": null,
+      "approach": "Drei Lightformers; no remote HDRI",
+      "spec": "1-2k, warm key + warm rim + cool fill, compressed",
+      "status": "local_lightformer_studio"
+    },
+    {
+      "key": "stage/board",
+      "menu_id": null,
+      "approach": "procedural",
+      "spec": "round wood board under the bowl, contact shadows; the striped ring is a DOM/SVG overlay",
+      "status": "planned"
+    }
+  ]
+}

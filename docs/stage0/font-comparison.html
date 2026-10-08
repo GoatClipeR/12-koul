@@ -1,0 +1,71 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>12-KOUL — font comparison</title>
+<style>
+@font-face{font-family:"Bricolage";src:url("/node_modules/@fontsource-variable/bricolage-grotesque/files/bricolage-grotesque-latin-standard-normal.woff2");font-weight:200 800;font-stretch:75% 100%}
+@font-face{font-family:"Alfa";src:url("/node_modules/@fontsource/alfa-slab-one/files/alfa-slab-one-latin-400-normal.woff2");font-weight:400}
+@font-face{font-family:"RokkittV";src:url("/node_modules/@fontsource-variable/rokkitt/files/rokkitt-latin-wght-normal.woff2");font-weight:100 900}
+@font-face{font-family:"ArchivoV";src:url("/node_modules/@fontsource-variable/archivo/files/archivo-latin-standard-normal.woff2");font-weight:100 900;font-stretch:62% 125%}
+@font-face{font-family:"FigtreeV";src:url("/node_modules/@fontsource-variable/figtree/files/figtree-latin-wght-normal.woff2");font-weight:300 900}
+@font-face{font-family:"HankenV";src:url("/node_modules/@fontsource-variable/hanken-grotesk/files/hanken-grotesk-latin-wght-normal.woff2");font-weight:100 900}
+:root{--red:#D43935;--gold:#EBB34A;--wood:#4D2514;--wood-deep:#3E1F14;--navy:#334D6F;--paper:#FFF9EE}
+*{box-sizing:border-box}
+body{margin:0;background:#2a140b;color:var(--paper);font:16px/1.4 system-ui;padding:28px;width:1500px}
+h1{font:600 14px/1 system-ui;letter-spacing:.04em;margin:0 0 18px;opacity:.7}
+.top{display:flex;gap:28px;align-items:center;margin-bottom:26px}
+.top img{width:230px;height:230px;border-radius:12px;background:#fff}
+.top p{max-width:520px;opacity:.8;margin:0}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:var(--wood);border-radius:10px;padding:18px 18px 22px;border:1px solid #6b3a22}
+.card h2{font:600 12px/1 system-ui;margin:0 0 14px;opacity:.6}
+.brand{color:var(--gold);font-size:64px;line-height:1;margin:0 0 6px;text-shadow:0 3px 0 #2a140b}
+.h2{font-size:30px;line-height:1.1;margin:14px 0 6px}
+.dia{font-size:22px;margin:6px 0}
+.row{display:flex;justify-content:space-between;gap:10px;margin-top:6px;font-size:20px}
+.bodies{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:26px}
+.ticket{background:var(--paper);color:var(--wood);border-radius:6px;padding:20px 24px;position:relative}
+.ticket h2{font:600 12px/1 system-ui;margin:0 0 12px;opacity:.55}
+.msg{font-size:18px;line-height:1.45;margin:0 0 14px;max-width:46ch}
+.line{display:flex;justify-content:space-between;font-size:16px;padding:5px 0;border-bottom:1px dashed #d9c6a6;font-variant-numeric:tabular-nums}
+.tot{display:flex;justify-content:space-between;font-size:22px;font-weight:700;margin-top:10px;font-variant-numeric:tabular-nums}
+.small{font-size:13px;opacity:.75;margin-top:10px}
+</style></head><body>
+<h1>12-KOUL — DISPLAY FACE CANDIDATES vs. THE LOGO BANNER (provisional, Stage 0)</h1>
+<div class="top"><img src="/public/brand/logo_12kool.png" alt="logo">
+<p>The banner lettering is a heavy, slightly slab-flavoured sans in gold on dark wood. Candidates are rendered in the same gold/wood, plus French accents and tabular price figures. Bottom row: two body-face candidates on the ticket surface.</p></div>
+<div class="grid">
+ <div class="card"><h2>A · BRICOLAGE GROTESQUE 800 (opsz, wdth 85)</h2>
+  <div class="brand" style="font-family:Bricolage;font-weight:800;font-stretch:85%">12-KOUL</div>
+  <div class="h2" style="font-family:Bricolage;font-weight:800;font-stretch:90%">Grande salade</div>
+  <div class="dia" style="font-family:Bricolage;font-weight:700">Œuf · Épinards · Crêpe · Çà</div>
+  <div class="row" style="font-family:Bricolage;font-weight:700"><span>Total</span><span>55 MAD</span></div></div>
+ <div class="card"><h2>B · ALFA SLAB ONE 400</h2>
+  <div class="brand" style="font-family:Alfa">12-KOUL</div>
+  <div class="h2" style="font-family:Alfa">Grande salade</div>
+  <div class="dia" style="font-family:Alfa">Œuf · Épinards · Crêpe · Çà</div>
+  <div class="row" style="font-family:Alfa"><span>Total</span><span>55 MAD</span></div></div>
+ <div class="card"><h2>C · ROKKITT 800</h2>
+  <div class="brand" style="font-family:RokkittV;font-weight:800">12-KOUL</div>
+  <div class="h2" style="font-family:RokkittV;font-weight:800">Grande salade</div>
+  <div class="dia" style="font-family:RokkittV;font-weight:700">Œuf · Épinards · Crêpe · Çà</div>
+  <div class="row" style="font-family:RokkittV;font-weight:700"><span>Total</span><span>55 MAD</span></div></div>
+ <div class="card"><h2>D · ARCHIVO 800 (wdth 110)</h2>
+  <div class="brand" style="font-family:ArchivoV;font-weight:800;font-stretch:110%">12-KOUL</div>
+  <div class="h2" style="font-family:ArchivoV;font-weight:800;font-stretch:105%">Grande salade</div>
+  <div class="dia" style="font-family:ArchivoV;font-weight:700;font-stretch:105%">Œuf · Épinards · Crêpe · Çà</div>
+  <div class="row" style="font-family:ArchivoV;font-weight:700;font-stretch:105%"><span>Total</span><span>55 MAD</span></div></div>
+</div>
+<div class="bodies">
+ <div class="ticket" style="font-family:FigtreeV"><h2>BODY 1 · FIGTREE</h2>
+  <p class="msg">Pas de souci. Qu'est-ce qui te tente : frais et léger, protéiné, épicé ou gourmand ?</p>
+  <div class="line"><span>Petite salade</span><span>35 MAD</span></div>
+  <div class="line"><span>Laitue · Tomate · Concombre</span><span>0 MAD</span></div>
+  <div class="line"><span>Jus d'orange</span><span>15 MAD</span></div>
+  <div class="tot"><span>Total</span><span>50 MAD</span></div>
+  <div class="small">Allergènes suivis : produits laitiers, fruits à coque, gluten, œufs, sésame.</div></div>
+ <div class="ticket" style="font-family:HankenV"><h2>BODY 2 · HANKEN GROTESK</h2>
+  <p class="msg">Pas de souci. Qu'est-ce qui te tente : frais et léger, protéiné, épicé ou gourmand ?</p>
+  <div class="line"><span>Petite salade</span><span>35 MAD</span></div>
+  <div class="line"><span>Laitue · Tomate · Concombre</span><span>0 MAD</span></div>
+  <div class="line"><span>Jus d'orange</span><span>15 MAD</span></div>
+  <div class="tot"><span>Total</span><span>50 MAD</span></div>
+  <div class="small">Allergènes suivis : produits laitiers, fruits à coque, gluten, œufs, sésame.</div></div>
+</div></body></html>
